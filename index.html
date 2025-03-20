@@ -5,10 +5,76 @@
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
     <title>wdd231</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <meta name="description" content="Course Home Page for WDD231">
+    <meta name="author" content="Awuah Isaac">
     <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
-    <script src='main.js'></script>
+    <title>Course Home Page</title>
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/mobil.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <script src="navigation.js" defer></script>
+    <script src="scripts/course.js" defer></script>
+    <script src="date.js" defer></script>
+    <script src="scripts/work.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400&display=swap" rel="stylesheet">
 </head>
 <body>
-    <h1>wdd231-awuah try</h1>
+    <header>
+        <img src="images/Awuah Isaac.jpeg" alt="Awuah Isaac">
+        <span>Awuah Isaac</span>
+        <button id="menubottom">&#9776;</button>
+    </header>
+
+    
+        
+    <nav>
+        <ul id="menu" class="hide">
+            <li><a href="index.html" class="active">Home</a></li>
+            <li><a href="#">Chamber</a></li>
+            <li><a href="https://github.com/yourgithubusername">GitHub Profile</a></li>
+            <li><a href="https://www.linkedin.com/in/yourprofile">LinkedIn</a></li>
+        </ul>
+    </nav>
+
+        
+
+          <h1>Home</h1>
+    <main>
+         
+    
+         
+        <section id="courseWork">
+            <h2>Course Work</h2>
+            <div id="courseWorkList"></div>
+        </section>
+    
+        <section id="beachSection">
+            <h2>Accra-Labadi Beach </h2>
+            <img src="images/Labadi_beach.jpg" alt="Labadi Beach">
+            <p>Labadi Beach as seen in the daylight (left image) - Ghana</p>
+        </section>
+    
+        <section id="courseit">
+            <h1>Web and Computer Programming Courses</h1>
+            <div class="buttons">
+                <button onclick="filterCourses('all')">All Courses</button>
+                <button onclick="filterCourses('WDD')">WDD Courses</button>
+                <button onclick="filterCourses('CSE')">CSE Courses</button>
+            </div>
+            <h3>Total Credits: <span id="totalCredits">0</span></h3>
+            <div class="course-container" id="courseList"></div>
+        </section>
+    </main>
+    
+    
+     
+     <footer>
+        <p>&copy; <span id="currentyear"></span> | Awuah Isaac | Ghana-Sunyani</p>
+        <p id="lastModified"></p> 
+        <script src="scripts/date.js"></script>
+
+    </footer>
 </body>
 </html>
