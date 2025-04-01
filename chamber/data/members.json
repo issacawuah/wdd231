@@ -1,0 +1,60 @@
+[
+    {
+        "name": "IKONA HEALTH CONSULT",
+        "address": "Accar Pokuase ",
+        "phone": "+233 24419170",
+        "website": "https://www.youtube.com/@physioinstructors",
+        "image": "images/ikona.jpg",
+        "membership_level": 3
+    },
+    {
+        "name": "KINGSMOTIONGH",
+        "address": "Accra Franko Estate-Pokuase",
+        "phone": "+233 540701235",
+        "website": "https://www.youtube.com/c/KingsMotiongh",
+        "image": "images/kingsmotion.jpg",
+        "membership_level": 2
+    },
+    {
+        "name": "EUSBETT HOTEL",
+        "address": "P.O.Box 1167 Sunyani,Brong-Ahafo, Ghana",
+        "phone": "+(233)(0) 3520 -27116",
+        "website": "https://eusbetthotel.com/",
+        "image": "images/eusbet.png",
+        "membership_level": 1
+    },
+    {
+        "name": "LABADI BEACH GHANA",
+        "address": "987 Tech Park, Silicon Valley",
+        "phone": " +1 781 800 5000",
+        "website": "https://www.youtube.com/results?search_query=labadi+beach+ghana",
+        "image": "images/labadi.JPEG",
+        "membership_level": 3
+    },
+    {
+        "name": "IKONA HEALTH CONSULT",
+        "address": "Accar Pokuase ",
+        "phone": "+233 24419170",
+        "website": "https://www.youtube.com/@physioinstructors",
+        "image": "images/ikona.jpg",
+        "membership_level": 3
+    },
+    {
+        "name": "IKONA HEALTH CONSULT",
+        "address": "Accar Pokuase ",
+        "phone": "+233 24419170",
+        "website": "https://www.youtube.com/@physioinstructors",
+        "image": "images/ikona.jpg",
+        "membership_level": 3
+    }, 
+    {
+        "name": "TYCO CITY HOTER",
+        "address": "Sunyani hiegh street-Ghana",
+        "phone":  "+233 554370043",
+        "website": "https://www.tripadvisor.com/Hotel_Review-g2400444-d7196326-Reviews-Tyco_City_Hotel-Sunyani_Brong_Ahafo_Region.html",
+        "image" : "images/tyco.JPEG",
+        "membership_level":3
+
+    }
+
+]

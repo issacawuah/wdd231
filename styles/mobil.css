@@ -124,7 +124,7 @@ main {
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: #fff;
+    background-color: #cab4b4;
     padding: 20px;
     border-radius: 10px;
     box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.1);
@@ -172,8 +172,22 @@ footer {
     background-color: rgb(15, 15, 66);
     color: #ccc;
     text-align: center;
+    border: #654321;
+    height: 80px;
+    border-radius: 15px;
 }
 
 /* h1 {
     background-color: rgb(107, 91, 250);
 } */
+
+h1  {
+    background-color: rgb(48, 32, 136);
+    text-align: center;
+    color: #e4e4df;
+    height: 50%;
+    width: 50%;
+    /* margin-bottom: 20%; */
+    border-radius: 30px;
+    border: 1,solid red;
+}

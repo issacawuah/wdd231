@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name="description" content="Course chamber Page for WDD231">
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <meta name="author" content="Awuah Isaac">
+    <link rel='stylesheet' type='text/css' media='screen' href='css/style.css'>
+    <link rel="icon" type="image/png" href="images/FOCUSV.png">
+    <script src='main.js'></script>
+</head>
+<body>
+    <body>
+        <header>
+            <h1>Chamber of Commerce Directory</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="directory.html" class="active">Directory</a></li>
+                </ul>
+            </nav>
+        </header>
+    
+        <main>
+            <div class="view-toggle">
+                <button onclick="toggleView('grid')">Grid View</button>
+                <button onclick="toggleView('list')">List View</button>
+            </div>
+    
+            <section id="members-container" class="grid"></section>
+        </main>
+    
+        <footer>
+            <p>&copy; <span id="year"></span> | AWUAH ISAAC-FOCUS | WDD 231 | Last Updated: <span id="last-mod"></span></p>
+        </footer>
+    
+        <script src="js/script.js"></script>
+    </body>
+    </html>
+</body>
+</html>
