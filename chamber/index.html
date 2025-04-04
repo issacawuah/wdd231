@@ -1,15 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <meta charset='utf-8'>
-        <meta http-equiv='X-UA-Compatible' content='IE=edge'>
-        <title>Chamber of commerce</title>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Chamber of Commerce - Home</title>
         <meta name="description" content="Course chamber Page for WDD231">
-        <meta name='viewport' content='width=device-width, initial-scale=1'>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="author" content="Awuah Isaac">
-        <link rel='stylesheet' type='text/css' media='screen' href='styling/small.css'>
-        <link rel="icon" type="image/png" href="images/FOCUSV.png">
-        <script src='main.js'></script>
+        <link rel="stylesheet" type="text/css" media="screen" href="styling/small.css">
+        <link rel="icon" type="image/png" href="images/focus.png">
+        <meta property="og:image" content="images/og-image.jpg" />
+
+        <script src="main.js"></script>
     </head>
 <body>
   <!-- Header Section -->
@@ -29,7 +31,7 @@
   <section class="hero">
     <h2 class="visually-hidden">Hero Section</h2> <!-- Fix for missing heading -->
     <!-- Fix illegal space in image filename -->
-    <img src="images/Commerce%20Hero.jpg" alt="Chamber of Commerce" />
+    <img src="images/Commerce Hero.jpg" alt="Chamber of Commerce" />
     <div class="cta">
       <a href="./directory.html" class="cta-button">Join the Chamber</a>
     </div>
@@ -63,15 +65,24 @@
         Details about the annual meeting will be provided closer to the date. Stay tuned for more updates.
       </p>
     </div>
-  </section>
 
-  <!-- Weather Section -->
+    <div>
+         <!-- Weather Section -->
   <section class="weather">
     <h2>Current Weather</h2>
     <div id="weather-info">
       <p>Loading weather data...</p>
     </div>
+    </div>
   </section>
+
+  <!-- Weather Section
+  <section class="weather">
+    <h2>Current Weather</h2>
+    <div id="weather-info">
+      <p>Loading weather data...</p>
+    </div>
+  </section> -->
 
   <!-- Company Spotlights Section -->
   <section class="spotlights">
@@ -86,6 +97,6 @@
     <p>&copy; 2025 Chamber of Commerce. All rights reserved.</p>
   </footer>
 
-  <script src="script/scripts.js"></script>
+  <script src="script/wealther.js"></script>
 </body>
 </html>
