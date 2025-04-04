@@ -1,0 +1,259 @@
+/* General Layout */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+header {
+    background-color:#0a1128;
+    color:#f9fafb;
+    padding: 20px;
+    text-align: center;
+    
+}
+nav  {
+    border: 0.0005px solid rgb(87, 57, 57);
+    background-color: #011627;
+    margin-top: 50px;
+    padding-top: 40px;
+    border-radius: 3px;
+    
+}
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+/* Hero Section */
+.hero {
+    position: relative;
+    text-align: center;
+    color: white;
+}
+
+.hero img {
+    width: 100%;
+    height: auto;
+}
+
+/* Call-to-action Button */
+.cta-button {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 10px 20px;
+    background-color: #7400b8;
+    color: rgb(221, 184, 184);
+    font-size: 16px;
+    text-decoration: none;
+    border-radius: 5px;
+    border: 1px solid rgb(24, 129, 3);
+}
+
+.cta-button:hover {
+    background-color: #5d66ee;
+}
+
+/* Current Events Section */
+.current-events {
+    padding: 20px;
+    text-align: center;
+    background-color: #e77878;
+    
+}
+
+.current-events h2 {
+    color: #e6e8f3;
+    background-color: #03071e;
+    border-radius: 5px;
+    border: 2px solid rgb(41, 1, 1);
+    font-style: italic;
+    width: 50%;
+    text-align: center;
+    margin-bottom: 1oopx;
+    margin-left: 100px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.current-events h2 {
+    margin-bottom: 15px;
+}
+
+.current-events ul {
+    list-style: none;
+    padding: 0;
+}
+
+.current-events ul li {
+    margin: 10px 0;
+}
+
+.current-events ul li a {
+    text-decoration: none;
+    color: #4e3939;
+    font-size: 18px;
+}
+
+.current-events ul li a:hover {
+    color: #ff9800;
+}
+
+/* Weather Section */
+.weather {
+    padding: 20px;
+    text-align: center;
+    background-color: #ebebeb;
+    border: 2px solid rgb(78, 78, 90);
+    border-radius: 4px;
+    border-style: inset;
+}
+
+.weather h2 {
+    margin-bottom: 15px;
+}
+
+.weather p {
+    font-size: 18px;
+    font-weight: bold;
+    margin: 5px 0;
+}
+
+/* Spotlight Cards */
+.spotlights {
+    padding: 20px;
+    text-align: center;
+    color: rgb(133, 117, 117);
+}
+
+.spotlight-card {
+    margin: 20px;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: inline-block;
+    width: 300px;
+    text-align: center;
+    background-color: #be1d1d;
+    transition: all 0.3s ease;
+}
+
+.spotlight-card img {
+    width: 100px;
+    height: auto;
+}
+
+.spotlight-card h3 {
+    font-size: 20px;
+    margin: 10px 0;
+}
+
+.spotlight-card p {
+    font-size: 14px;
+}
+
+.spotlight-card a {
+    color: #11355c;
+    text-decoration: none;
+}
+
+.spotlight-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 15px rgba(155, 20, 20, 0.2);
+}
+
+/* Footer */
+footer {
+    background-color: #274c77;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    height: 30%;
+}
+
+footer p {
+    margin: 0;
+    font-size: 14px;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    header {
+        text-align: left;
+    }
+
+    .hero img {
+        height: 250px;
+    }
+
+    .cta-button {
+        font-size: 14px;
+    }
+
+    .spotlight-card {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+}
+
+/* Grid container to hold the events */
+.current-events {
+    display: grid;
+    grid-template-columns: repeat(2, 2fr);  /* 3 equal-width columns */
+    grid-gap: 20px;  /* Spacing between columns */
+    padding: 20px;
+    border: 1px solid rgb(41, 43, 41);
+    background-color: #f7f7f6;
+    
+}
+
+/* Style for individual event blocks */
+.event {
+    background-color: #fefee3;  /* Light background for each event */
+    padding: 30px;
+    border: 1px solid #00171f;
+    border-radius: 8px;
+    box-shadow: 2 10px 6px rgba(129, 20, 26, 0.1);
+}
+
+/* Style the event heading */
+.event h3 a {
+    text-decoration: none;
+    color: #2e5681;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.event h3 a:hover {
+    color: #d6ca5b;
+}
+
+/* Adjust for smaller screens */
+@media (max-width: 768px) {
+    .current-events {
+        grid-template-columns: repeat(2, 1fr);  /* 2 columns for smaller screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .current-events {
+        grid-template-columns: 1fr;  /* 1 column for very small screens */
+    }
+}
+
