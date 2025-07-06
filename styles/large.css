@@ -1,0 +1,40 @@
+@media (min-width: 700px) {
+  header {
+    justify-content: flex-start;
+  }
+  #menu {
+    display: none;
+  }
+  nav {
+    display: block !important;
+    background: none;
+    margin-left: 2rem;
+  }
+  nav ul {
+    flex-direction: row;
+    gap: 1rem;
+  }
+  nav li {
+    border: none;
+  }
+  nav a {
+    color: #333;
+    background: none;
+    padding: 0.5rem 1rem;
+  }
+  nav a.active, nav a:hover {
+    background: #fcf8f8;
+    color: #222;
+  }
+  main {
+    max-width: 900px;
+    margin: 2rem auto;
+    padding: 2rem;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+  }
+  footer {
+    font-size: 1.1rem;
+  }
+} 

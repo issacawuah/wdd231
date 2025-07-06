@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="WDD 231: Web Frontend Development I - Course Home Page for Awuah Isaac">
+  <meta name="author" content="Awuah Isaac">
+  <title>WDD 231: Web Frontend Development I - Home</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles/normalize.css">
+  <link rel="stylesheet" href="styles/small.css">
+  <link rel="stylesheet" href="styles/large.css">
+  <script src="scripts/navigation.js" defer></script>
+  <script src="scripts/date.js" defer></script>
+  <script src="scripts/course.js" defer></script>
+</head>
+<body>
+  <header>
+    <img src="images/images.jpg" alt="Site Logo" id="logo" />
+    <span id="site-owner">Awuah Isaac</span>
+    <button id="menu" aria-label="Open navigation menu">&#9776;</button>
+  </header>
+  <nav id="main-nav">
+    <ul>
+      <li><a href="index.html" class="active">Home</a></li>
+      <li><a href="#">Chamber</a></li>
+      <li><a href="#">Final</a></li>
+    </ul>
+  </nav>
+  <main>
+    <div class="main-content-container">
+      <h1>Home</h1>
+      <div class="about-photo-container">
+        <section class="about-me">
+          <h2>About Me</h2>
+          <p>I'm Awuah Isaac, a 31-year-old passionate web developer from Sunyani, Ghana (Airport City), currently studying Web and Computer Programming at BYU Idaho with a focus on frontend development using HTML, CSS, and JavaScript to create responsive and user-friendly web experiences.</p>
+        </section>
+        <section class="student-photo">
+          <h2>Student Photo</h2>
+          <img src="images/studen.jpeg" alt="Your profile" id="profile-img" />
+        </section>
+      </div>
+      <section id="certificate-section">
+        <h2 class="header">Web Certificate Courses</h2>
+        <div id="course-filters">
+          <button id="show-all">All</button>
+          <button id="show-cse">CSE</button>
+          <button id="show-wdd">WDD</button>
+        </div>
+        <!-- Course count message will be injected by JS -->
+        <div id="courses-list"></div>
+        <div id="total-credits"></div>
+      </section>
+    </div>
+    <section id="social-section">
+      <a href="https://github.com/issacawuah" target="_blank" aria-label="GitHub"><img src="images/github-icon.svg" alt="GitHub" class="social-icon" /></a>
+      <a href="https://www.linkedin.com/in/issac-awuah-qwej" target="_blank" aria-label="LinkedIn"><img src="images/linkedin-icon.svg" alt="LinkedIn" class="social-icon" /></a>
+      <!--  More social icons as needed -->
+    </section>
+  </main>
+  <footer>
+    <div id="social-links">
+      <a href="https://github.com/issacawuah" target="_blank" aria-label="GitHub">GitHub</a>
+      <a href="https://www.linkedin.com/in/issac-awuah-qwej" target="_blank" aria-label="LinkedIn">LinkedIn</a>
+      <!-- More social links as needed -->
+    </div>
+    <p>&copy; <span id="currentyear"></span> Awuah Isaac | Ghana, Sunyani airport city</p>
+    <p id="lastModified"></p>
+  </footer>
+</body>
+</html> 
