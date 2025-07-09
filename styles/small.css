@@ -285,7 +285,7 @@ footer p, footer #social-links {
 }
 
 h2:hover {
-  transform: translateY(-20);
+  transform: translateY(-20px);
   transition: all 1s ease;
   box-shadow: #4b3c6e;
 }
