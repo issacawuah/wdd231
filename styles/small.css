@@ -283,3 +283,9 @@ footer p, footer #social-links {
   padding: 3%;
   margin: 2%;
 }
+
+h2:hover {
+  transform: translateY(-20);
+  transition: all 1s ease;
+  box-shadow: #4b3c6e;
+}
