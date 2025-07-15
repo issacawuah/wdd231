@@ -1,0 +1,142 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  background: #f8f8f8;
+  color: #222;
+}
+header {
+  background: #e0e0e0;
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+header img {
+  height: 50px;
+  margin-right: 1rem;
+}
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+  margin: 0;
+  padding: 0;
+}
+nav a {
+  text-decoration: none;
+  color: #222;
+  font-weight: bold;
+}
+nav a.active {
+  color: #0077cc;
+}
+.hero {
+  position: relative;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+.hero img {
+  width: 100%;
+  max-height: 250px;
+  object-fit: cover;
+}
+.cta {
+  position: absolute;
+  right: 2rem;
+  bottom: 2rem;
+  padding: 0.75rem 1.5rem;
+  background: #0077cc;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+}
+.info-panels {
+  display: flex;
+  gap: 1rem;
+  margin: 2rem 0;
+}
+.panel {
+  flex: 1;
+  background: #fff;
+  padding: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+}
+.directory-controls {
+  margin: 1rem 0;
+  text-align: right;
+}
+.directory-controls button {
+  margin-left: 0.5rem;
+  padding: 0.5rem 1rem;
+  border: 1px solid #0077cc;
+  background: #fff;
+  color: #0077cc;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.directory-controls button.active {
+  background: #0077cc;
+  color: #fff;
+}
+#directory.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1rem;
+}
+#directory.list {
+  display: block;
+}
+.member-card {
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+  padding: 1rem;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+#directory.list .member-card {
+  display: flex;
+  align-items: center;
+  text-align: left;
+  gap: 1rem;
+}
+.member-card img {
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-bottom: 0.5rem;
+}
+footer {
+  background: #e0e0e0;
+  padding: 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+  font-size: 0.95rem;
+}
+.contact-info, .dev-info {
+  margin-bottom: 1rem;
+}
+.social-links {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+@media (max-width: 700px) {
+  .info-panels {
+    flex-direction: column;
+  }
+  header, footer {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .cta {
+    position: static;
+    margin: 1rem 0 0 0;
+  }
+} 

@@ -1,0 +1,58 @@
+[
+  {
+    "name": "Ikona health center",
+    "address": "123 pokuase Rd, Accra",
+    "phone": "+233266838889",
+    "website": "https://www.youtube.com/watch?v=lYvnQJdqubs",
+    "image": "ikona.jpg",
+    "membership": 3
+  },
+  {
+    "name": "Kingsmotion",
+    "address": "456 East lagon, Accra",
+    "phone": "233554370043",
+    "website": "https://www.youtube.com/watch?v=e6luvoWDxsU",
+    "image": "motion.jpg",
+    "membership": 2
+  },
+  {
+    "name": "Eusbet Hotel",
+    "address": "789 sunyani St, Sunyani",
+    "phone": "+233-554370043",
+    "website": "https://www.youtube.com/results?search_query=eusbett+hotel+sunyani",
+    "image": "eusbet.webp",
+    "membership": 1
+  },
+  {
+    "name": "Eubeth Restorant",
+    "address": "321 municipla, Fiapre",
+    "phone": "223-555-1004",
+    "website": "https://eusbetthotel.com/restaurant-2/",
+    "image": "EUSBETr.jpg",
+    "membership": 2
+  },
+  {
+    "name": "Tyco Hotel",
+    "address": "654 abesim Rd, Sunyani",
+    "phone": "+233554370043",
+    "website": "https://tycocityhotel.com/",
+    "image": "tyco.webp",
+    "membership": 3
+  },
+  {
+    "name": "issacawuah",
+    "address": "987 Blue House, Sunyani",
+    "phone": "+233554370043",
+    "website": "https://www.youtube.com/@issacawuah7193",
+    "image": "ike.jpeg",
+    "membership": 1
+  },
+  {
+    "name": "Ikona health center",
+    "address": "159 Solar Way, Accra",
+    "phone": "+233554370043",
+    "website": "https://www.youtube.com/watch?v=lYvnQJdqubs",
+    "image": "ikona.jpg",
+    "membership": 2
+  }
+] 
