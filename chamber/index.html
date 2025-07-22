@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ghana Chamber of Commerce Home</title>
+  <meta name="description" content="Home page for the Accra Chamber of Commerce.">
+  <meta name="author" content="Awuah Isaac">
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
+  <!-- Open Graph / Facebook Meta Tags -->
+  <meta property="og:title" content="Timbuktu Chamber of Commerce Home">
+  <meta property="og:description" content="Home page for the Ghana Chamber of Commerce.">
+  <meta property="og:image" content="images/og-image.jpg">
+  <meta property="og:url" content="https://yourdomain.com/chamber/index.html">
+  <meta property="og:type" content="website">
+  <link rel="stylesheet" href="styles/normalize.css">
+  <link rel="stylesheet" href="css/chamber.css">
+  <script src="javascript/directory.js" defer></script>
+  <script src="javascript/member.js" defer></script>
+</head>
+<body>
+  <header>
+    <img src="images/logo-chamber.png" alt=" Chamber of Commerce Logo">
+    <!-- <h1> Chamber of Commerce</h1> -->
+    <nav>
+      <ul>
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="directory.html">Directory</a></li>
+        <li><a href="#">Join</a></li>
+        <li><a href="#">Discover</a></li>
+      </ul>
+      <button id="dark-mode-toggle" aria-label="Toggle dark mode">🌙</button>
+    </nav>
+  </header>
+  <main>
+    <section class="hero">
+      <img src="images/hero.png" alt="Welcome Ghana Chamber of Commerce" class="hero-img">
+      <div class="hero-content">
+        <h2>Welcome to the Ghana Chamber of Commerce</h2>
+        <p>Empowering local businesses and fostering community growth.</p>
+        <a href="#" class="cta join-cta">Join the Chamber</a>
+      </div>
+    </section>
+    <section class="events">
+      <h3>Upcoming Events</h3>
+      <ul>
+        <li><strong>Business Networking Night:</strong> April 25, 2024 - 6:00 PM at City Hall</li>
+        <li><strong>Small Business Workshop:</strong> May 10, 2024 - 10:00 AM at Chamber Office</li>
+        <li><strong>Annual Gala:</strong> June 15, 2024 - 7:00 PM at Grand Hotel</li>
+      </ul>
+    </section>
+    <section class="weather-panel">
+      <h3>Current Weather</h3>
+      <div id="current-weather">
+        <!-- Weather data will be loaded here by JS -->
+        <p>Loading current weather...</p>
+      </div>
+      <h4>3-Day Forecast</h4>
+      <div id="weather-forecast">
+        <!-- Forecast data will be loaded here by JS -->
+        <p>Loading forecast...</p>
+      </div>
+    </section>
+    <section class="spotlights">
+      <h3>Member Spotlights</h3>
+      <div id="spotlights">
+        <!-- Spotlight cards will be injected here by JS -->
+      </div>
+    </section>
+  </main>
+  <footer>
+    <div class="contact-info">
+      <strong>Ghan Chamber of Commerce</strong><br>
+      10 floor M plaza<br>
+      Accra, Mali 999<br>
+      info@timbuktucc.org<br>
+      (233) 554370043
+    </div>
+    <div class="social-links">
+      <!-- Social icons here -->
+    </div>
+    <div class="dev-info">
+      <span id="dev-name">Awuah Isaac</span> | WDD231 Class Project<br>
+      <span id="last-modified"></span>
+    </div>
+  </footer>
+</body>
+</html> 

@@ -3,7 +3,7 @@ const gridBtn = document.getElementById('grid-view');
 const listBtn = document.getElementById('list-view');
 
 async function getMembers() {
-  const response = await fetch('data/member.json');
+  const response = await fetch('data/member.json'); 
   const members = await response.json();
   displayMembers(members);
 }
