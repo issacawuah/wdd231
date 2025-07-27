@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Thank You for Joining</title>
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    body { font-family: Arial, sans-serif; margin: 0; padding: 0; }
+    header, nav, footer { background: #003366; color: #fff; padding: 1rem; text-align: center; }
+    main { max-width: 600px; margin: 2rem auto; background: #f9f9f9; padding: 2rem; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.1); }
+    .info { margin: 1rem 0; padding: 1rem; background: #fff; border-radius: 8px; box-shadow: 0 1px 4px rgba(0,0,0,0.05); }
+    .info strong { display: inline-block; width: 160px; }
+    a {
+      color: #fdfafa;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <img src="images/logo-chamber.png" alt="Chamber of Commerce" style="height:40px; vertical-align:middle;"> Chamber of Commerce
+  </header>
+  <nav>
+    <a href="../index.html">Home</a> 
+    <!-- <a href="#">W1</a> |
+    <a href="#">W2</a> |
+    <a href="#">W3</a> |
+    <a href="#">W4</a> |
+    <a href="#">W5</a> |
+    <a href="#">W6</a> |
+    <a href="#">W7</a> -->
+  </nav>
+  <main>
+    <h2>Thank You for Joining!</h2>
+    <p>We appreciate your interest in joining our Chamber of Commerce. Here is the information you submitted:</p>
+    <div class="info">
+      <div><strong>First Name:</strong> <span id="firstName"></span></div>
+      <div><strong>Last Name:</strong> <span id="lastName"></span></div>
+      <div><strong>Email:</strong> <span id="email"></span></div>
+      <div><strong>Mobile Number:</strong> <span id="phone"></span></div>
+      <div><strong>Business Name:</strong> <span id="organization"></span></div>
+      <div><strong>Submitted At:</strong> <span id="timestamp"></span></div>
+    </div>
+    <p>We will contact you soon with more information.</p>
+  </main>
+  <footer>
+    Copyright © Awuah Isaac-WDD231 | All rights reserved
+  </footer>
+  <script>
+    // Parse URL parameters and display required fields
+    function getParam(name) {
+      const url = new URL(window.location.href);
+      return url.searchParams.get(name) || '';
+    }
+    document.getElementById('firstName').textContent = getParam('firstName');
+    document.getElementById('lastName').textContent = getParam('lastName');
+    document.getElementById('email').textContent = getParam('email');
+    document.getElementById('phone').textContent = getParam('phone');
+    document.getElementById('organization').textContent = getParam('organization');
+    document.getElementById('timestamp').textContent = getParam('timestamp');
+  </script>
+</body>
+</html> 

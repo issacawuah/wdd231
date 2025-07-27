@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chamber Membership Join</title>
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    /* Basic styles for layout and animation */
+    body { font-family: Arial, sans-serif; margin: 0; padding: 0; }
+    header, nav, footer { background: #003366; color: #fff; padding: 1rem; text-align: center; }
+    main { display: flex; flex-wrap: wrap; gap: 2rem; justify-content: center; padding: 2rem; }
+    form { flex: 1 1 350px; max-width: 400px; background: #f9f9f9; padding: 2rem; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.1); }
+    .membership-cards { flex: 1 1 300px; display: flex; flex-direction: column; gap: 1rem; }
+    @media (min-width: 900px) {
+      main { flex-wrap: nowrap; align-items: flex-start; }
+      .membership-cards { flex-direction: column; }
+    }
+    a {
+      color:wheat ;
+    }
+    .card { opacity: 0; transform: translateY(40px); animation: fadeInUp 1s forwards; background: #fff; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.08); padding: 1rem; margin-bottom: 1rem; }
+    .card:nth-child(1) { animation-delay: 0.2s; }
+    .card:nth-child(2) { animation-delay: 0.4s; }
+    .card:nth-child(3) { animation-delay: 0.6s; }
+    .card:nth-child(4) { animation-delay: 0.8s; }
+    @keyframes fadeInUp {
+      to { opacity: 1; transform: none; }
+    }
+    .modal { display: none; position: fixed; z-index: 10; left: 0; top: 0; width: 100vw; height: 100vh; background: rgba(0,0,0,0.5); justify-content: center; align-items: center; }
+    .modal-content { background: #e8dede; padding: 2rem; border-radius: 8px; max-width: 400px; }
+    .close { float: right; font-size: 1.5rem; cursor: pointer; }
+    label { display: block; margin-bottom: 1rem; }
+    input, select, textarea { width: 100%; padding: 0.5rem; margin-top: 0.25rem; border-radius: 4px; border: 1px solid #ccc; }
+    input[type="submit"] { background: #003366; color: #f6f3f3; border: none; cursor: pointer; margin-top: 1rem; }
+  </style>
+</head>
+<body>
+  <header>
+    <img src="images/logo-chamber.png" alt="BYU-I logo" style="height:40px; vertical-align:middle;"> Chamber of Commerce
+  </header>
+  <nav>
+    <a href="../index.html">Home</a>
+    <!-- <a href="#">W1</a> |
+    <a href="#">W2</a> |
+    <a href="#">W3</a> |
+    <a href="#">W4</a> |
+    <a href="#">W5</a> |
+    <a href="#">W6</a> |
+    <a href="#">W7</a> -->
+  </nav>
+  <main>
+    <form method="get" action="thankyou.html" autocomplete="on">
+      <label>
+        First Name
+        <input type="text" name="firstName" title="First Name" required autocomplete="given-name">
+      </label>
+      <label>
+        Last Name
+        <input type="text" name="lastName" title="Last Name" required autocomplete="family-name">
+      </label>
+      <label>
+        Organizational Title
+        <input type="text" name="orgTitle" title="Organizational Title" autocomplete="organization-title" pattern="[A-Za-z\-\s]{7,}" placeholder="e.g. Marketing Lead">
+      </label>
+      <label>
+        Email
+        <input type="email" name="email" title="Email Address" required autocomplete="email" placeholder="example@email.com">
+      </label>
+      <label>
+        Mobile Phone
+        <input type="tel" name="phone" title="Mobile Phone" required autocomplete="tel">
+      </label>
+      <label>
+        Business/Organization Name
+        <input type="text" name="organization" title="Organization Name" required autocomplete="organization">
+      </label>
+      <label>
+        Membership Level
+        <select name="membership" title="Membership Level" required>
+          <option value="np">NP Membership (Non-Profit, Free)</option>
+          <option value="bronze">Bronze Membership</option>
+          <option value="silver">Silver Membership</option>
+          <option value="gold">Gold Membership</option>
+        </select>
+      </label>
+      <label>
+        Business/Organization Description
+        <textarea name="description" title="Business/Organization Description" rows="4"></textarea>
+      </label>
+      <input type="hidden" name="timestamp" id="timestamp">
+      <input type="submit" value="Apply for Membership">
+    </form>
+    <section class="membership-cards">
+      <div class="card">
+        <h3>NP Membership</h3>
+        <a href="#" onclick="openModal('modal-np');return false;">More Info</a>
+      </div>
+      <div class="card">
+        <h3>Bronze Membership</h3>
+        <a href="#" onclick="openModal('modal-bronze');return false;">More Info</a>
+      </div>
+      <div class="card">
+        <h3>Silver Membership</h3>
+        <a href="#" onclick="openModal('modal-silver');return false;">More Info</a>
+      </div>
+      <div class="card">
+        <h3>Gold Membership</h3>
+        <a href="#" onclick="openModal('modal-gold');return false;">More Info</a>
+      </div>
+    </section>
+    <!-- Modals -->
+    <div id="modal-np" class="modal"><div class="modal-content"><span class="close" onclick="closeModal('modal-np')">&times;</span><h3>NP Membership Benefits</h3><ul><li>No fee</li><li>Access to events</li><li>Networking</li></ul></div></div>
+    <div id="modal-bronze" class="modal"><div class="modal-content"><span class="close" onclick="closeModal('modal-bronze')">&times;</span><h3>Bronze Membership Benefits</h3><ul><li>All NP benefits</li><li>Event discounts</li><li>Spotlight in newsletter</li></ul></div></div>
+    <div id="modal-silver" class="modal"><div class="modal-content"><span class="close" onclick="closeModal('modal-silver')">&times;</span><h3>Silver Membership Benefits</h3><ul><li>All Bronze benefits</li><li>Training sessions</li><li>Homepage spotlight</li></ul></div></div>
+    <div id="modal-gold" class="modal"><div class="modal-content"><span class="close" onclick="closeModal('modal-gold')">&times;</span><h3>Gold Membership Benefits</h3><ul><li>All Silver benefits</li><li>Premium advertising</li><li>VIP event access</li></ul></div></div>
+  </main>
+  <footer>
+    Copyright © Awuah Isaac | All rights reserved
+  </footer>
+  <script>
+    // Set timestamp on page load
+    document.getElementById('timestamp').value = new Date().toISOString();
+    // Modal functions
+    function openModal(id) {
+      document.getElementById(id).style.display = 'flex';
+    }
+    function closeModal(id) {
+      document.getElementById(id).style.display = 'none';
+    }
+    // Close modal on outside click
+    window.onclick = function(event) {
+      document.querySelectorAll('.modal').forEach(function(modal) {
+        if (event.target === modal) modal.style.display = 'none';
+      });
+    }
+  </script>
+</body>
+</html> 
