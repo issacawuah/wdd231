@@ -1,0 +1,276 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Site Plan - Sunyani Food Truck Directory</title>
+    <style>
+        /* Color Schema */
+        :root {
+            --primary-color: #FF6B35; /* Vibrant orange for food/energy */
+            --secondary-color: #2C5530; /* Deep green for Ghana/nature */
+            --accent-color: #F4A261; /* Warm sand color */
+            --text-dark: #2C2C2C; /* Dark gray for text */
+            --text-light: #FFFFFF; /* White for light text */
+            --background-light: #F8F9FA; /* Light background */
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: var(--background-light);
+            color: var(--text-dark);
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        header {
+            background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+            color: var(--text-light);
+            padding: 40px 0;
+            text-align: center;
+        }
+
+        h1 {
+            font-family: 'Georgia', serif;
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+            color: var(--text-light);
+        }
+
+        h2 {
+            font-family: 'Georgia', serif;
+            color: var(--secondary-color);
+            border-bottom: 3px solid var(--primary-color);
+            padding-bottom: 10px;
+            margin-top: 40px;
+        }
+
+        h3 {
+            font-family: 'Georgia', serif;
+            color: var(--primary-color);
+            margin-top: 30px;
+        }
+
+        .section {
+            background: white;
+            margin: 20px 0;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+
+        .color-swatch {
+            display: inline-block;
+            width: 100px;
+            height: 60px;
+            margin: 10px;
+            border-radius: 8px;
+            border: 2px solid #ddd;
+            text-align: center;
+            line-height: 60px;
+            color: white;
+            font-weight: bold;
+        }
+
+        .wireframe {
+            border: 2px solid var(--secondary-color);
+            padding: 20px;
+            margin: 20px 0;
+            background: #f9f9f9;
+            border-radius: 8px;
+        }
+
+        .wireframe h4 {
+            color: var(--secondary-color);
+            margin-bottom: 15px;
+        }
+
+        .wireframe-box {
+            background: var(--accent-color);
+            border: 1px solid var(--secondary-color);
+            padding: 10px;
+            margin: 5px 0;
+            text-align: center;
+            border-radius: 4px;
+        }
+
+        .wireframe-box.header { background: var(--primary-color); color: white; }
+        .wireframe-box.nav { background: var(--secondary-color); color: white; }
+        .wireframe-box.hero { background: var(--accent-color); }
+        .wireframe-box.content { background: #e9ecef; }
+        .wireframe-box.footer { background: var(--secondary-color); color: white; }
+
+        .mobile-layout {
+            max-width: 400px;
+        }
+
+        .desktop-layout {
+            max-width: 800px;
+        }
+
+        .font-example {
+            margin: 10px 0;
+            padding: 10px;
+            border-left: 4px solid var(--primary-color);
+            background: #f8f9fa;
+        }
+
+        .font-heading {
+            font-family: 'Georgia', serif;
+            font-size: 1.5rem;
+            color: var(--secondary-color);
+        }
+
+        .font-body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-size: 1rem;
+            color: var(--text-dark);
+        }
+
+        .font-accent {
+            font-family: 'Arial', sans-serif;
+            font-weight: bold;
+            color: var(--primary-color);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Sunyani Food Truck Directory</h1>
+            <p>Site Plan & Development Blueprint</p>
+            <p><strong>Developer:</strong> Awuah Isaac</p>
+        </div>
+    </header>
+
+    <div class="container">
+        <div class="section">
+            <h2>Site Name</h2>
+            <h3>Sunyani Food Truck Directory</h3>
+            <p><strong>Reason for Selection:</strong> This name clearly identifies the geographic location (Sunyani, Ghana) and the specific service (Food Truck Directory). It's descriptive, memorable, and immediately communicates the site's purpose to visitors. The name emphasizes the local focus while highlighting the directory aspect that helps users discover mobile dining options.</p>
+            <p><strong>Optional Domain:</strong> sunyani-foodtrucks.gh</p>
+        </div>
+
+        <div class="section">
+            <h2>Site Purpose</h2>
+            <p>The Sunyani Food Truck Directory serves as a comprehensive online platform that connects food lovers with mobile dining experiences throughout Sunyani, Ghana. The site provides:</p>
+            <ul>
+                <li>A centralized directory of local food trucks with detailed information</li>
+                <li>Search and filtering capabilities to find specific cuisines or locations</li>
+                <li>Food truck profiles including menus, operating hours, and locations</li>
+                <li>User reviews and ratings to help with food discovery decisions</li>
+                <li>Contact information and social media links for food truck owners</li>
+                <li>Information about local food culture and Ghanaian cuisine</li>
+                <li>A platform for food truck owners to showcase their businesses</li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h2>Scenarios</h2>
+            <h3>Scenario 1: Local Resident Looking for Dinner</h3>
+            <p><strong>Question:</strong> "I'm hungry and want to try something new for dinner. What food trucks are operating near me tonight, and which ones have good reviews for traditional Ghanaian dishes?"</p>
+            <p><strong>Content Need:</strong> Search functionality, location-based filtering, cuisine categories, operating hours, and user reviews.</p>
+
+            <h3>Scenario 2: Tourist Exploring Local Cuisine</h3>
+            <p><strong>Question:</strong> "I'm visiting Sunyani and want to experience authentic local food. Which food trucks serve the best jollof rice and kelewele, and where can I find them?"</p>
+            <p><strong>Content Need:</strong> Cultural food information, specialty dish listings, tourist-friendly descriptions, and location maps.</p>
+
+            <h3>Scenario 3: Food Truck Owner Seeking Visibility</h3>
+            <p><strong>Question:</strong> "I own a food truck in Sunyani and want more customers to find me. How can I list my truck on this directory and showcase my menu?"</p>
+            <p><strong>Content Need:</strong> Business registration form, profile creation tools, and promotional opportunities.</p>
+        </div>
+
+        <div class="section">
+            <h2>Color Schema</h2>
+            <div>
+                <div class="color-swatch" style="background-color: #FF6B35;">Primary<br>#FF6B35</div>
+                <div class="color-swatch" style="background-color: #2C5530;">Secondary<br>#2C5530</div>
+                <div class="color-swatch" style="background-color: #F4A261;">Accent<br>#F4A261</div>
+            </div>
+            <h3>Color Usage:</h3>
+            <ul>
+                <li><strong>Primary Orange (#FF6B35):</strong> Call-to-action buttons, food images, highlights, and warm accents representing energy and appetite</li>
+                <li><strong>Secondary Green (#2C5530):</strong> Headers, navigation, footer, and main branding representing Ghana's natural beauty and growth</li>
+                <li><strong>Accent Sand (#F4A261):</strong> Background elements, cards, and subtle highlights representing warmth and hospitality</li>
+                <li><strong>Dark Gray (#2C2C2C):</strong> Body text and main content for readability</li>
+                <li><strong>White (#FFFFFF):</strong> Background areas and text on dark backgrounds</li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h2>Typography</h2>
+            <div class="font-example">
+                <div class="font-heading">Georgia Serif - Main Headings</div>
+                <p>Used for: Page titles, section headers, and main navigation</p>
+            </div>
+            <div class="font-example">
+                <div class="font-body">Segoe UI Sans-Serif - Body Text</div>
+                <p>Used for: Paragraphs, descriptions, and general content</p>
+            </div>
+            <div class="font-example">
+                <div class="font-accent">Arial Bold - Accent Text</div>
+                <p>Used for: Buttons, important labels, and emphasis</p>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>Wireframes</h2>
+            
+            <div class="wireframe mobile-layout">
+                <h4>Mobile Layout (320px - 768px)</h4>
+                <div class="wireframe-box header">Header: Logo + Menu Toggle</div>
+                <div class="wireframe-box nav">Navigation (Hamburger Menu)</div>
+                <div class="wireframe-box hero">Hero: "Discover Sunyani's Best Food Trucks"</div>
+                <div class="wireframe-box content">Search Bar</div>
+                <div class="wireframe-box content">Featured Food Trucks (Cards)</div>
+                <div class="wireframe-box content">Quick Categories</div>
+                <div class="wireframe-box content">About Section</div>
+                <div class="wireframe-box footer">Footer: Contact & Social Links</div>
+            </div>
+
+            <div class="wireframe desktop-layout">
+                <h4>Desktop Layout (769px+)</h4>
+                <div class="wireframe-box header">Header: Logo + Full Navigation</div>
+                <div class="wireframe-box hero">Hero: Large Banner with Search</div>
+                <div class="wireframe-box content">
+                    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px;">
+                        <div class="wireframe-box">Featured Trucks</div>
+                        <div class="wireframe-box">Categories</div>
+                    </div>
+                </div>
+                <div class="wireframe-box content">
+                    <div style="display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 20px;">
+                        <div class="wireframe-box">About</div>
+                        <div class="wireframe-box">Reviews</div>
+                        <div class="wireframe-box">Contact</div>
+                    </div>
+                </div>
+                <div class="wireframe-box footer">Footer: Full Links & Information</div>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>Development Notes</h2>
+            <ul>
+                <li>Mobile-first responsive design approach</li>
+                <li>Focus on fast loading times for mobile users</li>
+                <li>Accessibility compliance for all users</li>
+                <li>SEO optimization for local search</li>
+                <li>Integration with Google Maps for location services</li>
+                <li>User-friendly search and filtering system</li>
+            </ul>
+        </div>
+    </div>
+
+    <footer style="background: var(--secondary-color); color: white; text-align: center; padding: 20px; margin-top: 40px;">
+        <p>&copy; 2024 Sunyani Food Truck Directory | Developed by Awuah Isaac</p>
+    </footer>
+</body>
+</html> 
