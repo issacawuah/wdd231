@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Contact the Ghana Chamber of Commerce. Get in touch for business inquiries, membership information, and support.">
+    <title>Contact Us - Ghana Chamber of Commerce</title>
+    <link rel="stylesheet" href="css/stylesheet.css">
+</head>
+<body>
+    <header>
+        <h1>Ghana Chamber of Commerce</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="discover.html">Discover</a>
+            <a href="contact.html" aria-current="page">Contact</a>
+        </nav>
+    </header>
+    
+    <main class="contact-main">
+        <div class="container">
+            <h2>Contact Us</h2>
+            
+            <div class="contact-content">
+                <!-- Contact Information -->
+                <section class="contact-info">
+                    <h3>Get in Touch</h3>
+                    <div class="info-item">
+                        <h4>Address</h4>
+                        <p>123 Business District<br>Accra, Ghana</p>
+                    </div>
+                    <div class="info-item">
+                        <h4>Phone</h4>
+                        <p>+233 20 123 4567</p>
+                    </div>
+                    <div class="info-item">
+                        <h4>Email</h4>
+                        <p>info@ghanachamber.com</p>
+                    </div>
+                    <div class="info-item">
+                        <h4>Business Hours</h4>
+                        <p>Monday - Friday: 8:00 AM - 5:00 PM<br>
+                        Saturday: 9:00 AM - 1:00 PM<br>
+                        Sunday: Closed</p>
+                    </div>
+                </section>
+                
+                <!-- Contact Form -->
+                <section class="contact-form">
+                    <h3>Send us a Message</h3>
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <label for="name">Full Name *</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="email">Email Address *</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="phone">Phone Number</label>
+                            <input type="tel" id="phone" name="phone">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="subject">Subject *</label>
+                            <select id="subject" name="subject" required>
+                                <option value="">Select a subject</option>
+                                <option value="membership">Membership Inquiry</option>
+                                <option value="business">Business Development</option>
+                                <option value="tourism">Tourism Information</option>
+                                <option value="general">General Inquiry</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="message">Message *</label>
+                            <textarea id="message" name="message" rows="5" required></textarea>
+                        </div>
+                        
+                        <button type="submit" class="submit-btn">Send Message</button>
+                    </form>
+                </section>
+            </div>
+        </div>
+    </main>
+    
+    <footer>
+        <p>&copy; 2024 Ghana Chamber of Commerce. All rights reserved.</p>
+        <p>Connecting businesses, building futures</p>
+    </footer>
+    
+    <script src="javascript/contact.js"></script>
+</body>
+</html> 

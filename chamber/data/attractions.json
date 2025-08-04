@@ -1,0 +1,50 @@
+ [
+    {
+        "name": "City Park",
+        "address": "123 Park Ave, City, ST 12345",
+        "description": "A beautiful urban park with walking trails and picnic areas.",
+        "image": "images/city-park.webp"
+    },
+    {
+        "name": "History Museum",
+        "address": "456 Museum Rd, City, ST 12345",
+        "description": "Explore the rich history of our city with interactive exhibits.",
+        "image": "images/history-museum.webp"
+    },
+    {
+        "name": "Riverwalk Cafe",
+        "address": "789 River St, City, ST 12345",
+        "description": "Enjoy scenic dining along the riverfront.",
+        "image": "images/riverwalk-cafe.webp"
+    },
+    {
+        "name": "Art Gallery",
+        "address": "101 Art Ln, City, ST 12345",
+        "description": "Showcasing local artists and rotating exhibits.",
+        "image": "images/art-gallery.webp"
+    },
+    {
+        "name": "Botanical Garden",
+        "address": "202 Greenway, City, ST 12345",
+        "description": "A serene garden with diverse plant species.",
+        "image": "images/botanical-garden.webp"
+    },
+    {
+        "name": "Science Center",
+        "address": "303 Science Dr, City, ST 12345",
+        "description": "Hands-on exhibits for all ages.",
+        "image": "images/science-center.webp"
+    },
+    {
+        "name": "Historic Lighthouse",
+        "address": "404 Coast Rd, City, ST 12345",
+        "description": "A century-old lighthouse with stunning views.",
+        "image": "images/lighthouse.webp"
+    },
+    {
+        "name": "Farmers Market",
+        "address": "505 Market St, City, ST 12345",
+        "description": "Fresh produce and local crafts every weekend.",
+        "image": "images/farmers-market.webp"
+    }
+]

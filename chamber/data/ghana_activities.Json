@@ -1,0 +1,100 @@
+{
+  "ghana_activities": [
+    {
+      "id": 1,
+      "name": "Cape Coast Castle",
+      "description": "A UNESCO World Heritage site and former slave trading post built by the Portuguese in the 15th century. This historic castle offers guided tours through dungeons, courtyards, and the governor's quarters, providing insight into Ghana's colonial history and the transatlantic slave trade.",
+      "cost": {
+        "local": "50 GHS",
+        "foreigner": "100 GHS",
+        "guided_tour": "150 GHS"
+      },
+      "photo_url": " https://upload.wikimedia.org/wikipedia/commons/a/a0/Cape_Coast_Castle%2C_Cape_Coast%2C_Ghana.JPG",
+      "address": "Cape Coast, Central Region, Ghana"
+    },
+    {
+      "id": 2,
+      "name": "Kakum National Park Canopy Walkway",
+      "description": "Experience the rainforest from above on this thrilling 350-meter canopy walkway suspended 40 meters above the forest floor. The walkway consists of seven bridges connecting tree platforms, offering spectacular views of the tropical forest and wildlife.",
+      "cost": {
+        "local": "30 GHS",
+        "foreigner": "60 GHS",
+        "guided_tour": "100 GHS"
+      },
+      "photo_url": "  https://upload.wikimedia.org/wikipedia/commons/1/16/Kakum.jpg",
+      "address": "Kakum National Park, Central Region, Ghana"
+    },
+    {
+      "id": 3,
+      "name": "Mole National Park",
+      "description": "Ghana's largest wildlife park featuring elephants, antelopes, baboons, and over 300 bird species. Take a guided safari drive or walking tour to spot wildlife in their natural habitat. The park also offers accommodation and restaurant facilities.",
+      "cost": {
+        "local": "20 GHS",
+        "foreigner": "40 GHS",
+        "safari_tour": "200 GHS"
+      },
+      "photo_url": "https://upload.wikimedia.org/wikipedia/commons/6/69/Elefant_Ghana.jpg",
+      "address": "Mole National Park, Savannah Region, Ghana"
+    },
+    {
+      "id": 4,
+      "name": "Kwame Nkrumah Memorial Park",
+      "description": "A memorial dedicated to Ghana's first president and independence leader. The park features a mausoleum, museum, and beautiful gardens. Learn about Ghana's independence movement and Dr. Nkrumah's legacy through exhibits and guided tours.",
+      "cost": {
+        "local": "10 GHS",
+        "foreigner": "20 GHS",
+        "guided_tour": "50 GHS"
+      },
+      "photo_url": "https://upload.wikimedia.org/wikipedia/commons/1/17/Kwame_Nkrumah_Memorial_Park.jpg",
+      "address": "High Street, Accra, Greater Accra Region, Ghana"
+    },
+    {
+      "id": 5,
+      "name": "Kumasi Central Market (Kejetia)",
+      "description": "The largest open-air market in West Africa, offering everything from traditional crafts and textiles to fresh produce and spices. Experience the vibrant atmosphere, bargain with vendors, and purchase authentic Ashanti crafts and kente cloth.",
+      "cost": {
+        "entry": "Free",
+        "guided_tour": "100 GHS",
+        "shopping_budget": "200-1000 GHS"
+      },
+      "photo_url": "https://upload.wikimedia.org/wikipedia/commons/1/15/Kumasi.jpg",
+      "address": "Kejetia, Kumasi, Ashanti Region, Ghana"
+    },
+    {
+      "id": 6,
+      "name": "Boti Falls",
+      "description": "A stunning twin waterfall located in the Eastern Region. The falls consist of two side-by-side waterfalls that create a beautiful natural spectacle. Visitors can swim in the pool below and enjoy the surrounding forest scenery.",
+      "cost": {
+        "local": "15 GHS",
+        "foreigner": "30 GHS",
+        "guided_tour": "80 GHS"
+      },
+      "photo_url": "https://upload.wikimedia.org/wikipedia/commons/7/71/Boti_Falls%2C_Eastern_Region.JPG",
+      "address": "Boti, Eastern Region, Ghana"
+    },
+    {
+      "id": 7,
+      "name": "Labadi Beach",
+      "description": "One of Accra's most popular beaches, known for its golden sand and vibrant atmosphere. Enjoy swimming, beach volleyball, horseback riding, and local food from beach vendors. The beach comes alive on weekends with music and entertainment.",
+      "cost": {
+        "entry": "5 GHS",
+        "beach_chair": "20 GHS",
+        "horseback_riding": "100 GHS"
+      },
+      "photo_url": "https://upload.wikimedia.org/wikipedia/commons/3/39/Solnedgang_p%C3%A5_Labadi_beach.jpg",
+      "address": "Labadi, Accra, Greater Accra Region, Ghana"
+    },
+    {
+      "id": 8,
+      "name": "Manhyia Palace Museum",
+      "description": "The official residence of the Asantehene (King of Ashanti) and a museum showcasing Ashanti history and culture. View royal artifacts, traditional regalia, and learn about the rich Ashanti kingdom through guided tours and exhibits.",
+      "cost": {
+        "local": "25 GHS",
+        "foreigner": "50 GHS",
+        "guided_tour": "100 GHS"
+      },
+      "photo_url": "https://upload.wikimedia.org/wikipedia/commons/0/0a/Manhyia_Palace_Museum.jpg",
+      "address": "Manhyia, Kumasi, Ashanti Region, Ghana"
+    }
+  ]
+}
