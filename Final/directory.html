@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food Truck Directory - Sunyani Food Trucks</title>
+    <link rel="stylesheet" href="styles/large.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <nav class="nav">
+            <div class="nav-container">
+                <div class="nav-logo">
+                    <i class="fas fa-utensils"></i>
+                    <span>Sunyani Food Trucks</span>
+                </div>
+                <ul class="nav-menu">
+                    <li><a href="index.html" class="nav-link">Home</a></li>
+                    <li><a href="directory.html" class="nav-link active">Directory</a></li>
+                    <li><a href="about.html" class="nav-link">About</a></li>
+                    <li><a href="contact.html" class="nav-link">Contact</a></li>
+                </ul>
+                <div class="nav-toggle">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Directory Header -->
+    <section class="directory-header">
+        <div class="container">
+            <h1>Food Truck Directory</h1>
+            <p>Discover all the amazing food trucks in Sunyani</p>
+            
+            <!-- Search and Filters -->
+            <div class="directory-controls">
+                <div class="search-filters">
+                    <div class="search-box">
+                        <input type="text" id="searchInput" placeholder="Search food trucks..." class="search-input">
+                        <button class="search-btn">
+                            <i class="fas fa-search"></i>
+                        </button>
+                    </div>
+                    
+                    <div class="filters">
+                        <select id="cuisineFilter" class="filter-select">
+                            <option value="">All Cuisines</option>
+                            <option value="ghanaian">Ghanaian</option>
+                            <option value="west-african">West African</option>
+                            <option value="continental">Continental</option>
+                            <option value="vegetarian">Vegetarian</option>
+                        </select>
+                        
+                        <select id="locationFilter" class="filter-select">
+                            <option value="">All Locations</option>
+                            <option value="central-market">Central Market Area</option>
+                            <option value="university">University Campus</option>
+                            <option value="tech-hub">Tech Hub District</option>
+                            <option value="downtown">Downtown</option>
+                        </select>
+                        
+                        <select id="ratingFilter" class="filter-select">
+                            <option value="">All Ratings</option>
+                            <option value="4.5">4.5+ Stars</option>
+                            <option value="4.0">4.0+ Stars</option>
+                            <option value="3.5">3.5+ Stars</option>
+                        </select>
+                    </div>
+                </div>
+                
+                <div class="view-toggle">
+                    <button class="view-btn active" data-view="grid">
+                        <i class="fas fa-th"></i>
+                    </button>
+                    <button class="view-btn" data-view="list">
+                        <i class="fas fa-list"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Directory Content -->
+    <section class="directory-content">
+        <div class="container">
+            <div class="directory-stats">
+                <span id="truckCount">Showing 12 food trucks</span>
+                <span id="filterStatus"></span>
+            </div>
+            
+            <div class="trucks-container" id="trucksContainer">
+                <!-- Food Truck Cards will be populated by JavaScript -->
+            </div>
+            
+            <div class="load-more">
+                <button id="loadMoreBtn" class="load-more-btn">Load More Trucks</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Sunyani Food Trucks</h3>
+                    <p>Discovering the best mobile dining experiences in Sunyani, Ghana.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="directory.html">All Food Trucks</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="attributions.html">Attributions</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact Info</h4>
+                    <p><i class="fas fa-map-marker-alt"></i> Sunyani, Ghana</p>
+                    <p><i class="fas fa-phone"></i> +233 554370043</p>
+                    <p><i class="fas fa-envelope"></i> info@sunyanifoodtrucks.com</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Sunyani Food Truck Directory. All rights reserved.</p>
+                <p><a href="https://youtu.be/your-video-id" target="_blank" rel="noopener noreferrer">
+                    <i class="fas fa-video"></i> Watch Project Demo Video
+                </a></p>
+            </div>
+        </div>
+    </footer>
+
+    <script type="module" src="script/main.js"></script>
+</body>
+</html> 

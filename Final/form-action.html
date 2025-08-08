@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Submission Confirmation - Sunyani Food Trucks</title>
+    <meta name="description" content="Thank you for contacting Sunyani Food Trucks. Your message has been received and we'll get back to you soon.">
+    <meta name="author" content="Sunyani Food Truck Directory">
+    <link rel="stylesheet" href="styles/large.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <nav class="nav">
+            <div class="nav-container">
+                <div class="nav-logo">
+                    <i class="fas fa-utensils"></i>
+                    <span>Sunyani Food Trucks</span>
+                </div>
+                <ul class="nav-menu">
+                    <li><a href="index.html" class="nav-link">Home</a></li>
+                    <li><a href="directory.html" class="nav-link">Directory</a></li>
+                    <li><a href="about.html" class="nav-link">About</a></li>
+                    <li><a href="contact.html" class="nav-link">Contact</a></li>
+                </ul>
+                <div class="nav-toggle">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Form Action Content -->
+    <main class="form-action-content">
+        <div class="container">
+            <div class="form-action-card">
+                <div class="success-icon">
+                    <i class="fas fa-check-circle"></i>
+                </div>
+                <h1>Thank You!</h1>
+                <p class="success-message">Your message has been successfully submitted. We'll get back to you as soon as possible.</p>
+                
+                <div class="submission-details">
+                    <h2>Submission Details</h2>
+                    <div id="formDataDisplay">
+                        <!-- Form data will be displayed here via JavaScript -->
+                    </div>
+                </div>
+                
+                <div class="action-buttons">
+                    <a href="index.html" class="btn btn-primary">
+                        <i class="fas fa-home"></i>
+                        Return to Home
+                    </a>
+                    <a href="directory.html" class="btn btn-secondary">
+                        <i class="fas fa-search"></i>
+                        Browse Food Trucks
+                    </a>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Sunyani Food Trucks</h3>
+                    <p>Discovering the best mobile dining experiences in Sunyani, Ghana.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="directory.html">All Food Trucks</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="attributions.html">Attributions</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact Info</h4>
+                    <p><i class="fas fa-map-marker-alt"></i> Sunyani, Ghana</p>
+                    <p><i class="fas fa-phone"></i> +233 554370043</p>
+                    <p><i class="fas fa-envelope"></i> info@sunyanifoodtrucks.com</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Sunyani Food Truck Directory. All rights reserved.</p>
+                <p><a href="https://youtu.be/your-video-id" target="_blank" rel="noopener noreferrer">
+                    <i class="fas fa-video"></i> Watch Project Demo Video
+                </a></p>
+            </div>
+        </div>
+    </footer>
+
+    <script type="module" src="script/main.js"></script>
+    <script>
+        // Form action page specific JavaScript
+        document.addEventListener('DOMContentLoaded', function() {
+            // Get form data from URL parameters or localStorage
+            const urlParams = new URLSearchParams(window.location.search);
+            const formDataDisplay = document.getElementById('formDataDisplay');
+            
+            // Try to get form data from localStorage first
+            let formData = JSON.parse(localStorage.getItem('contactFormData') || '{}');
+            
+            // If no localStorage data, try URL parameters
+            if (!formData.name && urlParams.has('name')) {
+                formData = {
+                    name: urlParams.get('name'),
+                    email: urlParams.get('email'),
+                    phone: urlParams.get('phone'),
+                    subject: urlParams.get('subject'),
+                    message: urlParams.get('message')
+                };
+            }
+            
+            // Display form data
+            if (formData.name) {
+                const formDataHTML = `
+                    <div class="form-data-item">
+                        <strong>Name:</strong> ${formData.name}
+                    </div>
+                    <div class="form-data-item">
+                        <strong>Email:</strong> <a href="mailto:${formData.email}">${formData.email}</a>
+                    </div>
+                    ${formData.phone ? `
+                        <div class="form-data-item">
+                            <strong>Phone:</strong> <a href="tel:${formData.phone}">${formData.phone}</a>
+                        </div>
+                    ` : ''}
+                    <div class="form-data-item">
+                        <strong>Subject:</strong> ${formData.subject}
+                    </div>
+                    <div class="form-data-item">
+                        <strong>Message:</strong>
+                        <div class="message-content">${formData.message}</div>
+                    </div>
+                    <div class="form-data-item">
+                        <strong>Submission Time:</strong> ${new Date().toLocaleString()}
+                    </div>
+                `;
+                
+                formDataDisplay.innerHTML = formDataHTML;
+            } else {
+                formDataDisplay.innerHTML = `
+                    <div class="no-data-message">
+                        <p>No form data available. This page is typically accessed after submitting the contact form.</p>
+                        <p>You can <a href="contact.html">go back to the contact form</a> to submit a message.</p>
+                    </div>
+                `;
+            }
+            
+            // Clear form data from localStorage after displaying
+            localStorage.removeItem('contactFormData');
+        });
+    </script>
+</body>
+</html> 
