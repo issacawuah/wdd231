@@ -25,7 +25,7 @@ export const foodTrucksData = [
         rating: 4.2,
         reviews: 85,
         location: 'University Campus',
-        image: 'https://images.unsplash.com/photo-1565299624946-b28f40a0ca4b?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80',
+        image: 'https://upload.wikimedia.org/wikipedia/commons/b/bf/Grilled_tilapia_with_banku.jpg',
         badge: 'New',
         description: 'Fresh tilapia with banku, a traditional Ghanaian dish.',
         hours: 'Mon-Fri: 12:00 PM - 7:00 PM',
@@ -42,7 +42,7 @@ export const foodTrucksData = [
         rating: 4.6,
         reviews: 95,
         location: 'Tech Hub District',
-        image: 'https://images.unsplash.com/photo-1565299624946-b28f40a0ca4b?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80',
+        image: 'https://upload.wikimedia.org/wikipedia/commons/f/f7/Istanbul_spice_bazaar_02.jpg',
         badge: 'Trending',
         description: 'Innovative fusion of West African and international flavors.',
         hours: 'Tue-Sun: 11:00 AM - 9:00 PM',
@@ -116,7 +116,7 @@ export const foodTrucksData = [
         hours: 'Daily: 11:00 AM - 10:00 PM',
         price: 'Mid-range',
         menu: ['Grilled Chicken with Rice', 'Chicken Wings', 'Chicken Salad'],
-        phone: '+233 28 456 7890',
+        phone: ' +233 205657504',
         email: 'info@chickenrepublic.com'
     },
     {
@@ -133,7 +133,7 @@ export const foodTrucksData = [
         hours: 'Tue-Sun: 12:00 PM - 11:00 PM',
         price: 'Mid-range',
         menu: ['Margherita Pizza', 'Pepperoni Pizza', 'Vegetarian Pizza'],
-        phone: '+233 29 123 4567',
+        phone: ' +233 205657504',
         email: 'info@pizzaparadise.com'
     },
     {
@@ -150,7 +150,7 @@ export const foodTrucksData = [
         hours: 'Mon-Sat: 8:00 AM - 6:00 PM',
         price: 'Budget-friendly',
         menu: ['Mango Smoothie', 'Berry Blast', 'Green Detox'],
-        phone: '+233 30 987 6543',
+        phone: '+233 205657504 ',
         email: 'hello@smoothieking.com'
     },
     {
@@ -167,7 +167,7 @@ export const foodTrucksData = [
         hours: 'Daily: 11:00 AM - 9:00 PM',
         price: 'Budget-friendly',
         menu: ['Chicken Kebab', 'Beef Kebab', 'Falafel Wrap'],
-        phone: '+233 31 456 7890',
+        phone: ' +233 205657504',
         email: 'info@kebabcorner.com'
     },
     {
@@ -184,7 +184,7 @@ export const foodTrucksData = [
         hours: 'Daily: 12:00 PM - 10:00 PM',
         price: 'Budget-friendly',
         menu: ['Vanilla Ice Cream', 'Chocolate Ice Cream', 'Strawberry Ice Cream'],
-        phone: '+233 32 123 4567',
+        phone: '+ +233 205657504',
         email: 'hello@icecreamdream.com'
     },
     {
@@ -218,7 +218,7 @@ export const foodTrucksData = [
         hours: 'Tue-Sun: 11:00 AM - 8:00 PM',
         price: 'Premium',
         menu: ['California Roll', 'Salmon Nigiri', 'Tuna Roll'],
-        phone: '+233 34 456 7890',
+        phone: '+ +233 205657504',
         email: 'hello@sushiexpress.com'
     },
     {
@@ -235,7 +235,7 @@ export const foodTrucksData = [
         hours: 'Daily: 11:00 AM - 9:00 PM',
         price: 'Budget-friendly',
         menu: ['Chicken Taco', 'Beef Taco', 'Veggie Burrito'],
-        phone: '+233 35 123 4567',
+        phone: '+233 205657504',
         email: 'info@tacotime.com'
     },
     {
@@ -252,7 +252,7 @@ export const foodTrucksData = [
         hours: 'Daily: 7:00 AM - 8:00 PM',
         price: 'Budget-friendly',
         menu: ['Espresso', 'Cappuccino', 'Latte'],
-        phone: '+233 36 987 6543',
+        phone: '+233 554370043',
         email: 'hello@coffeecorner.com'
     }
 ];
