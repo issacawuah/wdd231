@@ -1,558 +1,18 @@
-<!DOCTYPE html>
+ <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Discover amazing attractions and activities in Ghana. Explore historical sites, natural wonders, and cultural experiences.">
+    <meta name="author" content="Issac Awuah">
+    <meta property="og:title" content="Discover Ghana - Chamber of Commerce">
+    <meta property="og:description" content="Explore Ghana's rich culture, historical landmarks, and natural wonders. From Cape Coast Castle to Wli Waterfalls, discover unforgettable experiences. Plan your visit with the Ghana Chamber of Commerce.">
+    <meta property="og:image" content="images/og-image.jpg">
+    <meta property="og:url" content="discover.html">
     <title>Discover Ghana - Chamber of Commerce</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Playfair+Display:wght@700;800&display=swap" rel="stylesheet">
-    <style>
-        :root {
-            --primary: #006b3f; /* Ghana green */
-            --primary-light: #009e60;
-            --secondary: #fcd20f; /* Ghana gold */
-            --secondary-light: #ffdf4d;
-            --accent: #cf0921; /* Ghana red */
-            --light: #f8f9fa;
-            --dark: #1a1a1a;
-            --text: #333333;
-            --gray: #6c757d;
-            --shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
-            --transition: all 0.3s ease;
-        }
-
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        body {
-            font-family: 'Poppins', sans-serif;
-            line-height: 1.6;
-            color: var(--text);
-            background-color: var(--light);
-            overflow-x: hidden;
-        }
-
-        h1, h2, h3, h4 {
-            font-family: 'Playfair Display', serif;
-            font-weight: 700;
-            color: var(--dark);
-        }
-
-        .container {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 0 20px;
-        }
-
-        /* Header & Navigation */
-        header {
-            background: linear-gradient(135deg, var(--primary), #004d2c);
-            color: white;
-            padding: 15px 0;
-            position: sticky;
-            top: 0;
-            z-index: 1000;
-            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-        }
-
-        .header-container {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-
-        .logo {
-            display: flex;
-            align-items: center;
-            gap: 10px;
-            font-size: 1.8rem;
-            font-weight: 700;
-        }
-
-        .logo img {
-            height: 50px;
-            filter: drop-shadow(0 2px 4px rgba(0,0,0,0.2));
-        }
-
-        nav {
-            display: flex;
-            align-items: center;
-        }
-
-        .nav-menu {
-            display: flex;
-            list-style: none;
-            gap: 25px;
-        }
-
-        .nav-menu a {
-            color: white;
-            text-decoration: none;
-            font-weight: 500;
-            padding: 8px 0;
-            position: relative;
-            transition: var(--transition);
-        }
-
-        .nav-menu a:hover {
-            color: var(--secondary);
-        }
-
-        .nav-menu a::after {
-            content: '';
-            position: absolute;
-            bottom: 0;
-            left: 0;
-            width: 0;
-            height: 3px;
-            background: var(--secondary);
-            transition: var(--transition);
-        }
-
-        .nav-menu a:hover::after {
-            width: 100%;
-        }
-
-        .mobile-toggle {
-            display: none;
-            background: transparent;
-            border: none;
-            color: white;
-            font-size: 1.5rem;
-            cursor: pointer;
-        }
-
-        /* Discover Hero Section */
-        .discover-hero {
-            background: linear-gradient(rgba(0, 107, 63, 0.85), rgba(0, 107, 63, 0.9)), 
-                        url('https://images.unsplash.com/photo-1543429776-2782fc586c9a?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80');
-            background-size: cover;
-            background-position: center;
-            color: white;
-            padding: 120px 0 80px;
-            text-align: center;
-            position: relative;
-            margin-bottom: 60px;
-        }
-
-        .discover-hero-content {
-            max-width: 800px;
-            margin: 0 auto;
-            position: relative;
-            z-index: 1;
-        }
-
-        .discover-hero h1 {
-            font-size: 3.5rem;
-            margin-bottom: 20px;
-            color: white;
-            text-shadow: 0 2px 4px rgba(0,0,0,0.3);
-        }
-
-        .discover-hero p {
-            font-size: 1.3rem;
-            max-width: 700px;
-            margin: 0 auto 40px;
-            opacity: 0.9;
-        }
-
-        /* Region Navigation */
-        .region-nav {
-            background: rgba(255, 255, 255, 0.1);
-            backdrop-filter: blur(10px);
-            border-radius: 50px;
-            padding: 15px;
-            max-width: 900px;
-            margin: 40px auto 0;
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            gap: 15px;
-        }
-
-        .region-btn {
-            background: transparent;
-            color: white;
-            border: 2px solid white;
-            padding: 8px 20px;
-            border-radius: 30px;
-            font-weight: 500;
-            cursor: pointer;
-            transition: var(--transition);
-        }
-
-        .region-btn:hover, .region-btn.active {
-            background: var(--secondary);
-            color: var(--dark);
-            border-color: var(--secondary);
-        }
-
-        /* Visitor Message */
-        .visitor-container {
-            background: white;
-            border-radius: 15px;
-            box-shadow: var(--shadow);
-            padding: 30px;
-            margin: 0 auto 60px;
-            max-width: 900px;
-            border-left: 5px solid var(--secondary);
-            text-align: center;
-        }
-
-        .visitor-container h2 {
-            color: var(--primary);
-            margin-bottom: 20px;
-            font-size: 1.8rem;
-        }
-
-        .visitor-card {
-            background: var(--light);
-            padding: 25px;
-            border-radius: 10px;
-            margin-top: 20px;
-        }
-
-        .visitor-card h3 {
-            color: var(--primary);
-            margin-bottom: 10px;
-            font-size: 1.3rem;
-        }
-
-        .visitor-card p {
-            color: var(--text);
-            font-style: italic;
-            margin-bottom: 15px;
-        }
-
-        .counter {
-            font-size: 1.2rem;
-            font-weight: 700;
-            color: var(--accent);
-        }
-
-        /* Discover Cards */
-        .section-title {
-            text-align: center;
-            margin-bottom: 60px;
-        }
-
-        .section-title h2 {
-            font-size: 2.5rem;
-            color: var(--primary);
-            position: relative;
-            display: inline-block;
-            margin-bottom: 20px;
-        }
-
-        .section-title h2::after {
-            content: '';
-            position: absolute;
-            bottom: -10px;
-            left: 50%;
-            transform: translateX(-50%);
-            width: 80px;
-            height: 4px;
-            background: var(--secondary);
-        }
-
-        .discover-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-            gap: 40px;
-            margin-bottom: 80px;
-        }
-
-        .discover-card {
-            background: white;
-            border-radius: 15px;
-            overflow: hidden;
-            box-shadow: var(--shadow);
-            transition: var(--transition);
-            position: relative;
-        }
-
-        .discover-card:hover {
-            transform: translateY(-10px);
-            box-shadow: 0 15px 30px rgba(0,0,0,0.15);
-        }
-
-        .card-image {
-            height: 250px;
-            overflow: hidden;
-        }
-
-        .card-image img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-            transition: var(--transition);
-        }
-
-        .discover-card:hover .card-image img {
-            transform: scale(1.1);
-        }
-
-        .card-content {
-            padding: 25px;
-        }
-
-        .card-content h3 {
-            font-size: 1.5rem;
-            margin-bottom: 15px;
-            color: var(--primary);
-        }
-
-        .card-meta {
-            display: flex;
-            justify-content: space-between;
-            margin-bottom: 15px;
-            color: var(--gray);
-            font-size: 0.9rem;
-        }
-
-        .card-content p {
-            margin-bottom: 20px;
-            color: var(--text);
-        }
-
-        .card-tags {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 10px;
-            margin-top: 15px;
-        }
-
-        .tag {
-            background: var(--light);
-            color: var(--primary);
-            padding: 5px 15px;
-            border-radius: 20px;
-            font-size: 0.85rem;
-            font-weight: 500;
-        }
-
-        /* Culture Section */
-        .culture-section {
-            background: linear-gradient(to right, var(--primary-light), var(--primary));
-            padding: 80px 0;
-            margin: 60px 0;
-            color: white;
-        }
-
-        .culture-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 30px;
-        }
-
-        .culture-card {
-            background: rgba(255, 255, 255, 0.1);
-            backdrop-filter: blur(10px);
-            border-radius: 15px;
-            padding: 30px;
-            text-align: center;
-            transition: var(--transition);
-        }
-
-        .culture-card:hover {
-            transform: translateY(-10px);
-            background: rgba(255, 255, 255, 0.15);
-        }
-
-        .culture-icon {
-            font-size: 3rem;
-            margin-bottom: 20px;
-            color: var(--secondary);
-        }
-
-        .culture-card h3 {
-            color: white;
-            margin-bottom: 15px;
-            font-size: 1.5rem;
-        }
-
-        /* Footer */
-        footer {
-            background: var(--dark);
-            color: white;
-            padding: 70px 0 30px;
-        }
-
-        .footer-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 40px;
-            margin-bottom: 50px;
-        }
-
-        .footer-column h3 {
-            font-size: 1.5rem;
-            margin-bottom: 25px;
-            position: relative;
-            padding-bottom: 15px;
-            color: white;
-        }
-
-        .footer-column h3::after {
-            content: '';
-            position: absolute;
-            bottom: 0;
-            left: 0;
-            width: 50px;
-            height: 3px;
-            background: var(--secondary);
-        }
-
-        .footer-links {
-            list-style: none;
-        }
-
-        .footer-links li {
-            margin-bottom: 15px;
-        }
-
-        .footer-links a {
-            color: #ccc;
-            text-decoration: none;
-            transition: var(--transition);
-            display: flex;
-            align-items: center;
-            gap: 10px;
-        }
-
-        .footer-links a:hover {
-            color: var(--secondary);
-            transform: translateX(5px);
-        }
-
-        .footer-contact {
-            color: #ccc;
-            margin-bottom: 15px;
-            display: flex;
-            align-items: center;
-            gap: 10px;
-        }
-
-        .social-links {
-            display: flex;
-            gap: 15px;
-            margin-top: 20px;
-        }
-
-        .social-links a {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            width: 40px;
-            height: 40px;
-            background: rgba(255, 255, 255, 0.1);
-            border-radius: 50%;
-            color: var(--secondary);
-            transition: var(--transition);
-        }
-
-        .social-links a:hover {
-            background: var(--secondary);
-            color: var(--dark);
-            transform: translateY(-5px);
-        }
-
-        .copyright {
-            text-align: center;
-            padding-top: 30px;
-            border-top: 1px solid rgba(255, 255, 255, 0.1);
-            color: #aaa;
-            font-size: 0.9rem;
-        }
-
-        /* Responsive Design */
-        @media (max-width: 992px) {
-            .nav-menu {
-                display: none;
-                position: absolute;
-                top: 100%;
-                left: 0;
-                right: 0;
-                background: var(--primary);
-                flex-direction: column;
-                padding: 20px;
-                gap: 15px;
-                box-shadow: 0 10px 15px rgba(0,0,0,0.1);
-            }
-            
-            .nav-menu.active {
-                display: flex;
-            }
-            
-            .mobile-toggle {
-                display: block;
-            }
-            
-            .discover-hero h1 {
-                font-size: 2.8rem;
-            }
-        }
-
-        @media (max-width: 768px) {
-            .discover-hero {
-                padding: 100px 0 60px;
-            }
-            
-            .discover-hero h1 {
-                font-size: 2.3rem;
-            }
-            
-            .discover-hero p {
-                font-size: 1.1rem;
-            }
-            
-            .section-title h2 {
-                font-size: 2rem;
-            }
-            
-            .region-nav {
-                border-radius: 15px;
-                padding: 10px;
-            }
-            
-            .region-btn {
-                padding: 6px 15px;
-                font-size: 0.9rem;
-            }
-        }
-
-        /* Animation */
-        @keyframes fadeInUp {
-            from {
-                opacity: 0;
-                transform: translateY(30px);
-            }
-            to {
-                opacity: 1;
-                transform: translateY(0);
-            }
-        }
-
-        .animated {
-            animation: fadeInUp 0.8s ease-out;
-        }
-
-        .delay-1 {
-            animation-delay: 0.2s;
-        }
-
-        .delay-2 {
-            animation-delay: 0.4s;
-        }
-
-        .delay-3 {
-            animation-delay: 0.6s;
-        }
-    </style>
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css/stylesheet.css">
+    <script src="javascript/discover.js" defer></script>
 </head>
 <body>
     <!-- Header -->
@@ -622,7 +82,7 @@
             <!-- Card 1 -->
             <div class="discover-card animated delay-1">
                 <div class="card-image">
-                    <img src="https://upload.wikimedia.org/wikipedia/commons/a/a0/Cape_Coast_Castle%2C_Cape_Coast%2C_Ghana.JPG" alt="Cape Coast Castle">
+                    <img src="images/Cape-Coast-Castle.jpg" alt="Cape Coast Castle">
                 </div>
                 <div class="card-content">
                     <h3>Cape Coast Castle</h3>
@@ -642,7 +102,7 @@
             <!-- Card 2 -->
             <div class="discover-card animated delay-2">
                 <div class="card-image">
-                    <img src="https://upload.wikimedia.org/wikipedia/commons/1/16/Kakum.jpg" alt="Kakum National Park">
+                    <img src="images/Kakum-National-Park.jpg" alt="Kakum National Park">
                 </div>
                 <div class="card-content">
                     <h3>Kakum National Park</h3>
@@ -662,7 +122,7 @@
             <!-- Card 3 -->
             <div class="discover-card animated delay-3">
                 <div class="card-image">
-                    <img src="https://images.unsplash.com/photo-1593696140826-c58b021acf8b?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Mole National Park">
+                    <img src="images/Mole-National-Park.jpg" alt="Mole National Park">
                 </div>
                 <div class="card-content">
                     <h3>Mole National Park</h3>
@@ -682,7 +142,7 @@
             <!-- Card 4 -->
             <div class="discover-card animated">
                 <div class="card-image">
-                    <img src="https://upload.wikimedia.org/wikipedia/commons/b/bd/Adomi-bridge_0418.png" alt="Lake Volta">
+                    <img src="images/lake-volta.png" alt="Lake Volta">
                 </div>
                 <div class="card-content">
                     <h3>Lake Volta</h3>
@@ -702,7 +162,7 @@
             <!-- Card 5 -->
             <div class="discover-card animated delay-1">
                 <div class="card-image">
-                    <img src="https://upload.wikimedia.org/wikipedia/commons/1/17/Kwame_Nkrumah_Memorial_Park.jpg" alt="Kwame Nkrumah Mausoleum">
+                    <img src="images/kwame-nkrumah-mausoleum.webp" alt="Kwame Nkrumah Mausoleum">
                 </div>
                 <div class="card-content">
                     <h3>Kwame Nkrumah Mausoleum</h3>
@@ -722,7 +182,7 @@
             <!-- Card 6 -->
             <div class="discover-card animated delay-2">
                 <div class="card-image">
-                    <img src="https://images.unsplash.com/photo-1593696140826-c58b021acf8b?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Wli Waterfalls">
+                    <img src="images/wli-waterfalls.jpg" alt="Wli Waterfalls">
                 </div>
                 <div class="card-content">
                     <h3>Wli Waterfalls</h3>
@@ -742,7 +202,7 @@
             <!-- Card 7 -->
             <div class="discover-card animated delay-3">
                 <div class="card-image">
-                    <img src="https://upload.wikimedia.org/wikipedia/commons/a/a7/Elmina_Castle_-_Ghana.jpg" alt="Elmina Castle">
+                    <img src="images/elmina-castle.jpg" alt="Elmina Castle">
                 </div>
                 <div class="card-content">
                     <h3>Elmina Castle</h3>
@@ -762,7 +222,7 @@
             <!-- Card 8 -->
             <div class="discover-card animated">
                 <div class="card-image">
-                    <img src="" alt="Kumasi Cultural Center">
+                    <img src="images/kumasi-cultural-center.jpg" alt="Kumasi Cultural Center">
                 </div>
                 <div class="card-content">
                     <h3>Kumasi Cultural Center</h3>
@@ -833,10 +293,10 @@
                     <h3>Ghana Chamber</h3>
                     <p style="color: #ccc; margin-bottom: 20px;">Promoting business excellence and economic growth in Ghana since 1948.</p>
                     <div class="social-links">
-                        <a href="https://www.facebook.com/issac.awuah.98"><i class="fab fa-facebook-f"></i></a>
-                        <a href="https://www.youtube.com/@issacawuah7193"><i class="fab fa-Youtube-y"></i></a>
-                        <a href="https://www.linkedin.com/in/issac-awuah-qwej/"><i class="fab fa-linkedin-in"></i></a>
-                        <a href="https://www.instagram.com/foc7563/?hl=en"><i class="fab fa-instagram"></i></a>
+                        <a href="https://www.facebook.com/"><i class="fab fa-facebook-f">f</i></a>
+                        <a href="https://www.youtube.com/@issacawuah7193"><i class="fab fa-youtube"></i>y</a>
+                        <a href="https://www.linkedin.com/feed/"><i class="fab fa-linkedin-in">L</i></a>
+                        <a href="https://www.instagram.com/?hl=en"><i class="fab fa-instagram">I</i></a>
                     </div>
                 </div>
                 
@@ -853,11 +313,11 @@
                 <div class="footer-column">
                     <h3>Travel Resources</h3>
                     <ul class="footer-links">
-                        <li><a href="#"><i class="fas fa-hotel"></i> Accommodation</a></li>
-                        <li><a href="#"><i class="fas fa-map-signs"></i> Travel Guides</a></li>
-                        <li><a href="#"><i class="fas fa-calendar-alt"></i> Events Calendar</a></li>
-                        <li><a href="#"><i class="fas fa-exchange-alt"></i> Visa Information</a></li>
-                        <li><a href="#"><i class="fas fa-info-circle"></i> Travel Tips</a></li>
+                        <li><a href="resources/accommodation.html"><i class="fas fa-hotel"></i> Accommodation</a></li>
+                        <li><a href="resources/travel-guides.html"><i class="fas fa-map-signs"></i> Travel Guides</a></li>
+                        <li><a href="resources/events.html"><i class="fas fa-calendar-alt"></i> Events Calendar</a></li>
+                        <li><a href="resources/visa.html"><i class="fas fa-exchange-alt"></i> Visa Information</a></li>
+                        <li><a href="resources/tips.html"><i class="fas fa-info-circle"></i> Travel Tips</a></li>
                     </ul>
                 </div>
                 
@@ -887,76 +347,5 @@
             </div>
         </div>
     </footer>
-
-    <script>
-        // Mobile menu toggle
-        const mobileToggle = document.querySelector('.mobile-toggle');
-        const navMenu = document.querySelector('.nav-menu');
-        
-        mobileToggle.addEventListener('click', () => {
-            navMenu.classList.toggle('active');
-            const icon = mobileToggle.querySelector('i');
-            if (icon.classList.contains('fa-bars')) {
-                icon.classList.remove('fa-bars');
-                icon.classList.add('fa-times');
-            } else {
-                icon.classList.remove('fa-times');
-                icon.classList.add('fa-bars');
-            }
-        });
-        
-        // Region filter buttons
-        const regionBtns = document.querySelectorAll('.region-btn');
-        regionBtns.forEach(btn => {
-            btn.addEventListener('click', () => {
-                regionBtns.forEach(b => b.classList.remove('active'));
-                btn.classList.add('active');
-            });
-        });
-        
-        // Visitor counter functionality
-        function updateVisitorCounter() {
-            // Get last visit date from localStorage
-            const lastVisit = localStorage.getItem('lastVisit');
-            const now = new Date();
-            
-            if (lastVisit) {
-                const lastVisitDate = new Date(parseInt(lastVisit));
-                const daysSince = Math.floor((now - lastVisitDate) / (1000 * 60 * 60 * 24));
-                document.querySelectorAll('.counter')[1].textContent = `${daysSince === 0 ? 'Today' : daysSince + ' days ago'}`;
-            } else {
-                document.querySelectorAll('.counter')[1].textContent = 'Never';
-            }
-            
-            // Update visit count
-            let visitCount = localStorage.getItem('visitCount') || 0;
-            visitCount = parseInt(visitCount) + 1;
-            localStorage.setItem('visitCount', visitCount);
-            document.querySelectorAll('.counter')[0].textContent = `${visitCount}${visitCount === 1 ? 'st' : visitCount === 2 ? 'nd' : visitCount === 3 ? 'rd' : 'th'}`;
-            
-            // Store current visit time
-            localStorage.setItem('lastVisit', now.getTime());
-        }
-        
-        // Initialize visitor counter
-        updateVisitorCounter();
-        
-        // Animation for cards on scroll
-        const observer = new IntersectionObserver((entries) => {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    entry.target.style.opacity = "1";
-                    entry.target.style.transform = "translateY(0)";
-                }
-            });
-        }, { threshold: 0.1 });
-        
-        document.querySelectorAll('.animated').forEach(card => {
-            card.style.opacity = "0";
-            card.style.transform = "translateY(30px)";
-            card.style.transition = "opacity 0.8s ease, transform 0.8s ease";
-            observer.observe(card);
-        });
-    </script>
 </body>
 </html>
