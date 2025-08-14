@@ -1,10 +1,17 @@
-<!DOCTYPE html>
+ <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Discover the best food trucks in Sunyani, Ghana with our comprehensive directory.">
+    <meta name="author" content="Sunyani Food Truck Directory">
+    <meta name="og:title" content="Food Truck Directory - Sunyani Food Trucks">
+    <meta name="og:description" content="Explore a variety of food trucks in Sunyani, offering Ghanaian, West African, Continental, and Vegetarian cuisines.">
+    <meta name="og:type" content="website">
+    <meta name="og:image" content="images/food-truck-hero.webp">
+    <link rel="icon" href="images/favicon.ico">
     <title>Food Truck Directory - Sunyani Food Trucks</title>
-    <link rel="stylesheet" href="styles/large.css">
+    <link rel="stylesheet" href="styles/stlyes.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
@@ -43,7 +50,7 @@
                 <div class="search-filters">
                     <div class="search-box">
                         <input type="text" id="searchInput" placeholder="Search food trucks..." class="search-input">
-                        <button class="search-btn">
+                        <button class="search-btn" aria-label="Search food trucks">
                             <i class="fas fa-search"></i>
                         </button>
                     </div>
@@ -75,10 +82,10 @@
                 </div>
                 
                 <div class="view-toggle">
-                    <button class="view-btn active" data-view="grid">
+                    <button class="view-btn active" data-view="grid" aria-label="Grid view">
                         <i class="fas fa-th"></i>
                     </button>
-                    <button class="view-btn" data-view="list">
+                    <button class="view-btn" data-view="list" aria-label="List view">
                         <i class="fas fa-list"></i>
                     </button>
                 </div>
@@ -90,12 +97,148 @@
     <section class="directory-content">
         <div class="container">
             <div class="directory-stats">
-                <span id="truckCount">Showing 12 food trucks</span>
+                <span id="truckCount">Showing 6 of 15 food trucks</span>
                 <span id="filterStatus"></span>
             </div>
             
             <div class="trucks-container" id="trucksContainer">
-                <!-- Food Truck Cards will be populated by JavaScript -->
+                <!-- Jollof Junction -->
+                <div class="truck-card">
+                    <div class="truck-image">
+                        <img src="image/Waakye-Express-Food-Truck.jpg" alt="Jollof Junction Food Truck" loading="lazy">
+                        <span class="truck-badge">Popular</span>
+                    </div>
+                    <div class="truck-content">
+                        <h3>Jollof Junction</h3>
+                        <p class="truck-cuisine">Ghanaian • Jollof Rice</p>
+                        <div class="truck-rating">
+                            <i class="fas fa-star"></i>
+                            <span>4.8 (120 reviews)</span>
+                        </div>
+                        <p class="truck-location">Central Market Area</p>
+                        <p>Hours: Mon-Sat: 11:00 AM - 8:00 PM</p>
+                        <p>Price: Budget-friendly</p>
+                        <div class="truck-actions">
+                            <a href="#" class="btn btn-primary" aria-label="View details for Jollof Junction">View Details</a>
+                            <a href="contact.html" class="btn btn-secondary" aria-label="Contact Jollof Junction">Contact</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Banku & Tilapia Express -->
+                <div class="truck-card">
+                    <div class="truck-image">
+                        <img src="image/locations-icon.png2.jpg" alt="Banku & Tilapia Express Food Truck" loading="lazy">
+                        <span class="truck-badge">New</span>
+                    </div>
+                    <div class="truck-content">
+                        <h3>Banku & Tilapia Express</h3>
+                        <p class="truck-cuisine">Ghanaian • Seafood</p>
+                        <div class="truck-rating">
+                            <i class="fas fa-star"></i>
+                            <span>4.2 (85 reviews)</span>
+                        </div>
+                        <p class="truck-location">University Campus</p>
+                        <p>Hours: Mon-Fri: 12:00 PM - 7:00 PM</p>
+                        <p>Price: Mid-range</p>
+                        <div class="truck-actions">
+                            <a href="#" class="btn btn-primary" aria-label="View details for Banku & Tilapia Express">View Details</a>
+                            <a href="contact.html" class="btn btn-secondary" aria-label="Contact Banku & Tilapia Express">Contact</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Spice Route -->
+                <div class="truck-card">
+                    <div class="truck-image">
+                        <img src="image/rsz_food-truck-hero.jpg" alt="Spice Route Food Truck" loading="lazy">
+                        <span class="truck-badge">Trending</span>
+                    </div>
+                    <div class="truck-content">
+                        <h3>Spice Route</h3>
+                        <p class="truck-cuisine">West African • Fusion</p>
+                        <div class="truck-rating">
+                            <i class="fas fa-star"></i>
+                            <span>4.6 (95 reviews)</span>
+                        </div>
+                        <p class="truck-location">Tech Hub District</p>
+                        <p>Hours: Tue-Sun: 11:00 AM - 9:00 PM</p>
+                        <p>Price: Premium</p>
+                        <div class="truck-actions">
+                            <a href="#" class="btn btn-primary" aria-label="View details for Spice Route">View Details</a>
+                            <a href="contact.html" class="btn btn-secondary" aria-label="Contact Spice Route">Contact</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Waakye Express -->
+                <div class="truck-card">
+                    <div class="truck-image">
+                        <img src="image/Waakye-Express-Food-Truck.jpg" alt="Waakye Express Food Truck" loading="lazy">
+                        <span class="truck-badge">Local Favorite</span>
+                    </div>
+                    <div class="truck-content">
+                        <h3>Waakye Express</h3>
+                        <p class="truck-cuisine">Ghanaian • Traditional</p>
+                        <div class="truck-rating">
+                            <i class="fas fa-star"></i>
+                            <span>4.4 (78 reviews)</span>
+                        </div>
+                        <p class="truck-location">Downtown</p>
+                        <p>Hours: Daily: 6:00 AM - 2:00 PM</p>
+                        <p>Price: Budget-friendly</p>
+                        <div class="truck-actions">
+                            <a href="#" class="btn btn-primary" aria-label="View details for Waakye Express">View Details</a>
+                            <a href="contact.html" class="btn btn-secondary" aria-label="Contact Waakye Express">Contact</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Continental Cafe -->
+                <div class="truck-card">
+                    <div class="truck-image">
+                        <img src="image/cafe-webp2.jpg" alt="Continental Cafe Food Truck" loading="lazy">
+                        <span class="truck-badge">International</span>
+                    </div>
+                    <div class="truck-content">
+                        <h3>Continental Cafe</h3>
+                        <p class="truck-cuisine">Continental • International</p>
+                        <div class="truck-rating">
+                            <i class="fas fa-star"></i>
+                            <span>4.3 (65 reviews)</span>
+                        </div>
+                        <p class="truck-location">Central Market Area</p>
+                        <p>Hours: Mon-Sat: 10:00 AM - 8:00 PM</p>
+                        <p>Price: Mid-range</p>
+                        <div class="truck-actions">
+                            <a href="#" class="btn btn-primary" aria-label="View details for Continental Cafe">View Details</a>
+                            <a href="contact.html" class="btn btn-secondary" aria-label="Contact Continental Cafe">Contact</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Vegan Haven -->
+                <div class="truck-card">
+                    <div class="truck-image">
+                        <img src="image/Waakye-Express-Food-Truck.jpg" alt="Vegan Haven Food Truck" loading="lazy">
+                        <span class="truck-badge">Vegan</span>
+                    </div>
+                    <div class="truck-content">
+                        <h3>Vegan Haven</h3>
+                        <p class="truck-cuisine">Vegetarian • Plant-based</p>
+                        <div class="truck-rating">
+                            <i class="fas fa-star"></i>
+                            <span>4.7 (42 reviews)</span>
+                        </div>
+                        <p class="truck-location">University Campus</p>
+                        <p>Hours: Mon-Fri: 11:00 AM - 6:00 PM</p>
+                        <p>Price: Mid-range</p>
+                        <div class="truck-actions">
+                            <a href="#" class="btn btn-primary" aria-label="View details for Vegan Haven">View Details</a>
+                            <a href="contact.html" class="btn btn-secondary" aria-label="Contact Vegan Haven">Contact</a>
+                        </div>
+                    </div>
+                </div>
             </div>
             
             <div class="load-more">
@@ -112,7 +255,7 @@
                     <h3>Sunyani Food Trucks</h3>
                     <p>Discovering the best mobile dining experiences in Sunyani, Ghana.</p>
                     <div class="social-links">
-                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="https://www.facebook.com/issac.awuah.98"><i class="fab fa-facebook"></i></a>
                         <a href="#"><i class="fab fa-twitter"></i></a>
                         <a href="#"><i class="fab fa-instagram"></i></a>
                         <a href="#"><i class="fab fa-whatsapp"></i></a>
@@ -143,6 +286,6 @@
         </div>
     </footer>
 
-    <script type="module" src="script/main.js"></script>
+    <script type="module" src="scripts/main.js"></script>
 </body>
-</html> 
+</html>

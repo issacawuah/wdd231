@@ -3,25 +3,30 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Explore Sunyani's top food trucks with traditional Ghanaian and international cuisines. Find your next meal on wheels!">
+    <meta name="author" content="Your Name">
+    <meta property="og:title" content="Sunyani Food Truck Directory">
+    <meta property="og:description" content="Discover the best food trucks in Sunyani, Ghana, offering a variety of local and international dishes. Browse by cuisine or location.">
+    <meta property="og:image" content="https://yourusername.github.io/wdd231/images/food-truck-hero.jpg">
+    <meta property="og:url" content="https://yourusername.github.io/wdd231/index.html">
     <title>Sunyani Food Truck Directory - Discover Local Flavors</title>
-    <link rel="stylesheet" href="styles/large.css">
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="styles/stlyes.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous">
 </head>
 <body>
-    <!-- Header -->
     <header class="header">
         <nav class="nav">
             <div class="nav-container">
                 <div class="nav-logo">
-                    <i class="fas fa-utensils"></i>
+                    <i class="fas fa-utensils" aria-hidden="true"></i>
                     <span>Sunyani Food Trucks</span>
                 </div>
                 <ul class="nav-menu">
-                    <li><a href="../chamber/home.html" class="nav-link active">Home</a></li>
-                    <li><a href="../Final/index.html" class="nav-link">Directory</a></li>
-                    <li><a href="../Final/about.html" class="nav-link">About</a></li>
-                    <li><a href="../Final/contact.html" class="nav-link">Contact</a></li>
+                    <li><a href="index.html" class="nav-link active">Home</a></li>
+                    <li><a href="directory.html" class="nav-link">Directory</a></li>
+                    <li><a href="contact.html" class="nav-link">Contact</a></li>
                 </ul>
                 <div class="nav-toggle">
                     <span class="bar"></span>
@@ -32,206 +37,210 @@
         </nav>
     </header>
 
-    <!-- Hero Section -->
-    <section class="hero">
-        <div class="hero-container">
-            <div class="hero-content">
-                <h1 class="hero-title">Discover Sunyani's Best Food Trucks</h1>
-                <p class="hero-subtitle">From traditional Ghanaian dishes to international flavors, find your next delicious meal on wheels</p>
-                <div class="hero-search">
-                    <input type="text" placeholder="Search for food trucks, cuisines, or locations..." class="search-input">
-                    <button class="search-btn">
-                        <i class="fas fa-search"></i>
-                    </button>
-                </div>
-            </div>
-            <div class="hero-image">
-                <div class="hero-card">
-                    <img src="https://img.freepik.com/free-psd/food-truck-landing-page-template_23-2149740823.jpg" alt="Delicious Ghanaian Food">
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Categories Section -->
-    <section class="categories">
-        <div class="container">
-            <h2 class="section-title">Explore by Cuisine</h2>
-            <div class="categories-grid">
-                <div class="category-card">
-                    <i class="fas fa-drumstick-bite"></i>
-                    <h3>Ghanaian</h3>
-                    <p>Traditional local dishes</p>
-                </div>
-                <div class="category-card">
-                    <i class="fas fa-pepper-hot"></i>
-                    <h3>West African</h3>
-                    <p>Regional specialties</p>
-                </div>
-                <div class="category-card">
-                    <i class="fas fa-hamburger"></i>
-                    <h3>Continental</h3>
-                    <p>International flavors</p>
-                </div>
-                <div class="category-card">
-                    <i class="fas fa-leaf"></i>
-                    <h3>Vegetarian</h3>
-                    <p>Plant-based options</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Featured Trucks Section -->
-    <section class="featured">
-        <div class="container">
-            <h2 class="section-title">Featured Food Trucks</h2>
-            <div class="trucks-grid">
-                <div class="truck-card">
-                    <div class="truck-image">
-                        <img src="https://images.unsplash.com/photo-1555939594-58d7cb561ad1?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" alt="Jollof Junction">
-                        <div class="truck-badge">Popular</div>
-                    </div>
-                    <div class="truck-content">
-                        <h3>Jollof Junction</h3>
-                        <p class="truck-cuisine">Ghanaian • Jollof Rice</p>
-                        <div class="truck-rating">
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <span>4.8 (120 reviews)</span>
-                        </div>
-                        <div class="truck-location">
-                            <i class="fas fa-map-marker-alt"></i>
-                            <span>Central Market Area</span>
-                        </div>
-                        <a href="contact.html" class="truck-btn">View Details</a>
+    <main>
+        <section class="hero">
+            <h1 class="hero-title">Discover Sunyani's Best Food Trucks</h1>
+            <div class="hero-container">
+                <div class="hero-content">
+                    <p class="hero-subtitle">From traditional Ghanaian dishes to international flavors, find your next delicious meal on wheels</p>
+                    <div class="hero-search">
+                        <label for="search-input" class="visually-hidden">Search food trucks</label>
+                        <input type="text" id="search-input" placeholder="Search for food trucks, cuisines, or locations..." class="search-input">
+                        <button class="search-btn" aria-label="Search">
+                            <i class="fas fa-search" aria-hidden="true"></i>
+                        </button>
                     </div>
                 </div>
-
-                <div class="truck-card">
-                    <div class="truck-image">
-                        <img src="https://upload.wikimedia.org/wikipedia/commons/b/bf/Grilled_tilapia_with_banku.jpg" alt="Banku & Tilapia Express">
-                        <div class="truck-badge">New</div>
-                    </div>
-                    <div class="truck-content">
-                        <h3>Banku & Tilapia Express</h3>
-                        <p class="truck-cuisine">Ghanaian • Seafood</p>
-                        <div class="truck-rating">
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="far fa-star"></i>
-                            <span>4.2 (85 reviews)</span>
-                        </div>
-                        <div class="truck-location">
-                            <i class="fas fa-map-marker-alt"></i>
-                            <span>University Campus</span>
-                        </div>
-                        <a href="contact.html" class="truck-btn">View Details</a>
-                    </div>
-                </div>
-
-                <div class="truck-card">
-                    <div class="truck-image">
-                        <img src="https://upload.wikimedia.org/wikipedia/commons/f/f7/Istanbul_spice_bazaar_02.jpg" alt="Spice Route">
-                        <div class="truck-badge">Trending</div>
-                    </div>
-                    <div class="truck-content">
-                        <h3>Spice Route</h3>
-                        <p class="truck-cuisine">West African • Fusion</p>
-                        <div class="truck-rating">
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <span>4.6 (95 reviews)</span>
-                        </div>
-                        <div class="truck-location">
-                            <i class="fas fa-map-marker-alt"></i>
-                            <span>Tech Hub District</span>
-                        </div>
-                        <a href="contact.html" class="truck-btn">View Details</a>
+                <div class="hero-image">
+                    <div class="hero-card">
+                        <img src="image/locations-icon.png2.jpg" alt="Vibrant food truck serving traditional Ghanaian dishes in Sunyani">
                     </div>
                 </div>
             </div>
-            <div class="featured-cta">
-                <a href="directory.html" class="cta-btn">View All Food Trucks</a>
-            </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- Stats Section -->
-    <section class="stats">
-        <div class="container">
-            <div class="stats-grid">
-                <div class="stat-item">
-                    <i class="fas fa-truck"></i>
-                    <h3>25+</h3>
-                    <p>Food Trucks</p>
-                </div>
-                <div class="stat-item">
-                    <i class="fas fa-users"></i>
-                    <h3>5000+</h3>
-                    <p>Happy Customers</p>
-                </div>
-                <div class="stat-item">
-                    <i class="fas fa-star"></i>
-                    <h3>4.5</h3>
-                    <p>Average Rating</p>
-                </div>
-                <div class="stat-item">
-                    <i class="fas fa-map-marker-alt"></i>
-                    <h3>15+</h3>
-                    <p>Locations</p>
+        <section class="categories">
+            <div class="container">
+                <h2 class="section-title">Explore by Cuisine</h2>
+                <div class="categories-grid">
+                    <div class="category-card">
+                        <i class="fas fa-drumstick-bite" aria-hidden="true"></i>
+                        <h3>Ghanaian</h3>
+                        <p>Traditional local dishes</p>
+                        <img src="image/rsz_cuisine.jpg" alt="Ghanaian cuisine icon" loading="lazy">
+                    </div>
+                    <div class="category-card">
+                        <i class="fas fa-pepper-hot" aria-hidden="true"></i>
+                        <h3>West African</h3>
+                        <p>Regional specialties</p>
+                        <img src="image/rsz-continental-cuisin1.jpg" alt="West African cuisine icon" loading="lazy">
+                    </div>
+                    <div class="category-card">
+                        <i class="fas fa-hamburger" aria-hidden="true"></i>
+                        <h3>Continental</h3>
+                        <p>International flavors</p>
+                        <img src="image/rsz-continental-cuisin1.jpg" alt="Continental cuisine icon" loading="lazy">
+                    </div>
+                    <div class="category-card">
+                        <i class="fas fa-leaf" aria-hidden="true"></i>
+                        <h3>Vegetarian</h3>
+                        <p>Plant-based options</p>
+                        <img src="image/rsz_vegetarian-pizza.jpg" alt="Vegetarian cuisine icon" loading="lazy">
+                    </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- Footer -->
-    <footer class="footer" id="contact">
+        <section class="featured">
+            <div class="container">
+                <h2 class="section-title">Featured Food Trucks</h2>
+                <div class="trucks-grid">
+                    <div class="truck-card">
+                        <div class="truck-image">
+                            <img src="image/rsz_jorlof.jpg" alt="Jollof Junction food truck serving Ghanaian jollof rice" loading="lazy">
+                            <div class="truck-badge">Popular</div>
+                        </div>
+                        <div class="truck-content">
+                            <h3>Jollof Junction</h3>
+                            <p class="truck-cuisine">Ghanaian • Jollof Rice</p>
+                            <div class="truck-rating">
+                                <i class="fas fa-star" aria-hidden="true"></i>
+                                <i class="fas fa-star" aria-hidden="true"></i>
+                                <i class="fas fa-star" aria-hidden="true"></i>
+                                <i class="fas fa-star" aria-hidden="true"></i>
+                                <i class="fas fa-star" aria-hidden="true"></i>
+                                <span>4.8 (120 reviews)</span>
+                            </div>
+                            <div class="truck-location">
+                                <i class="fas fa-map-marker-alt" aria-hidden="true"></i>
+                                <span>Central Market Area</span>
+                            </div>
+                            <a href="contact.html" class="btn">View Details</a>
+                        </div>
+                    </div>
+
+                    <div class="truck-card">
+                        <div class="truck-image">
+                            <img src="image/rsz_banku_with_grilled_tilapia_and_pepper.jpg" alt="Banku & Tilapia Express food truck serving Ghanaian seafood" loading="lazy">
+                            <div class="truck-badge">New</div>
+                        </div>
+                        <div class="truck-content">
+                            <h3>Banku & Tilapia Express</h3>
+                            <p class="truck-cuisine">Ghanaian • Seafood</p>
+                            <div class="truck-rating">
+                                <i class="fas fa-star" aria-hidden="true"></i>
+                                <i class="fas fa-star" aria-hidden="true"></i>
+                                <i class="fas fa-star" aria-hidden="true"></i>
+                                <i class="fas fa-star" aria-hidden="true"></i>
+                                <i class="far fa-star" aria-hidden="true"></i>
+                                <span>4.2 (85 reviews)</span>
+                            </div>
+                            <div class="truck-location">
+                                <i class="fas fa-map-marker-alt" aria-hidden="true"></i>
+                                <span>University Campus</span>
+                            </div>
+                            <a href="contact.html" class="btn">View Details</a>
+                        </div>
+                    </div>
+
+                    <div class="truck-card">
+                        <div class="truck-image">
+                            <img src="image/rsz_spice-route.jpg" alt="Spice Route food truck serving West African fusion dishes" loading="lazy">
+                            <div class="truck-badge">Trending</div>
+                        </div>
+                        <div class="truck-content">
+                            <h3>Spice Route</h3>
+                            <p class="truck-cuisine">West African • Fusion</p>
+                            <div class="truck-rating">
+                                <i class="fas fa-star" aria-hidden="true"></i>
+                                <i class="fas fa-star" aria-hidden="true"></i>
+                                <i class="fas fa-star" aria-hidden="true"></i>
+                                <i class="fas fa-star" aria-hidden="true"></i>
+                                <i class="fas fa-star" aria-hidden="true"></i>
+                                <span>4.6 (95 reviews)</span>
+                            </div>
+                            <div class="truck-location">
+                                <i class="fas fa-map-marker-alt" aria-hidden="true"></i>
+                                <span>Tech Hub District</span>
+                            </div>
+                            <a href="contact.html" class="btn">View Details</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="featured-cta">
+                    <a href="directory.html" class="btn">View All Food Trucks</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="stats">
+            <div class="container">
+                <div class="stats-grid">
+                    <div class="stat-item">
+                        <i class="fas fa-truck" aria-hidden="true"></i>
+                        <h3>25+</h3>
+                        <p>Food Trucks</p>
+                        <img src="image/rsz_rsz_customers-icon.png" alt="Food truck icon" loading="lazy">
+                    </div>
+                    <div class="stat-item">
+                        <i class="fas fa-users" aria-hidden="true"></i>
+                        <h3>5000+</h3>
+                        <p>Happy Customers</p>
+                        <img src="image/rsz_rsz_customers-icon.png" alt="Happy customers icon" loading="lazy">
+                    </div>
+                    <div class="stat-item">
+                        <i class="fas fa-star" aria-hidden="true"></i>
+                        <h3>4.5</h3>
+                        <p>Average Rating</p>
+                        <img src="image/rsz_rsz_rating-icon1.jpg" alt="Average rating icon" loading="lazy">
+                    </div>
+                    <div class="stat-item">
+                        <i class="fas fa-map-marker-alt" aria-hidden="true"></i>
+                        <h3>15+</h3>
+                        <p>Locations</p>
+                        <img src="image/rsz_1locations-icon.png" alt="Locations icon" loading="lazy">
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
         <div class="container">
             <div class="footer-content">
                 <div class="footer-section">
                     <h3>Sunyani Food Trucks</h3>
                     <p>Discovering the best mobile dining experiences in Sunyani, Ghana.</p>
                     <div class="social-links">
-                        <a href="#"><i class="fab fa-facebook"></i></a>
-                        <a href="#"><i class="fab fa-twitter"></i></a>
-                        <a href="#"><i class="fab fa-instagram"></i></a>
-                        <a href="#"><i class="fab fa-whatsapp"></i></a>
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook" aria-hidden="true"></i></a>
+                        <a href="#" aria-label="Twitter"><i class="fab fa-twitter" aria-hidden="true"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram" aria-hidden="true"></i></a>
+                        <a href="#" aria-label="WhatsApp"><i class="fab fa-whatsapp" aria-hidden="true"></i></a>
                     </div>
                 </div>
                 <div class="footer-section">
                     <h4>Quick Links</h4>
                     <ul>
                         <li><a href="directory.html">All Food Trucks</a></li>
-                        <li><a href="about.html">About Us</a></li>
                         <li><a href="contact.html">Contact</a></li>
-                        <li><a href="attributions.html">Attributions</a></li>
                     </ul>
                 </div>
                 <div class="footer-section">
                     <h4>Contact Info</h4>
-                    <p><i class="fas fa-map-marker-alt"></i> Sunyani, Ghana</p>
-                    <p><i class="fas fa-phone"></i> +233 554370043</p>
-                    <p><i class="fas fa-envelope"></i> info@sunyanifoodtrucks.com</p>
+                    <p><i class="fas fa-map-marker-alt" aria-hidden="true"></i> Sunyani, Ghana</p>
+                    <p><i class="fas fa-phone" aria-hidden="true"></i> +233 554370043</p>
+                    <p><i class="fas fa-envelope" aria-hidden="true"></i> info@sunyanifoodtrucks.com</p>
                 </div>
             </div>
             <div class="footer-bottom">
                 <p>&copy; 2025 Sunyani Food Truck Directory. All rights reserved.</p>
-                <p><a href=" https://www.loom.com/share/2be74b074c14484792db5f5559c13e34?sid=0532413e-a5e5-42fd-a473-1e2476fbf2ec" target="_blank" rel="noopener noreferrer">
-                    <i class="fas fa-video"></i> Watch Project Demo Video
+                <p><a href="https://www.loom.com/share/2be74b074c14484792db5f5559c13e34?sid=0532413e-a5e5-42fd-a473-1e2476fbf2ec" target="_blank" rel="noopener noreferrer">
+                    <i class="fas fa-video" aria-hidden="true"></i> Watch Project Demo Video
                 </a></p>
             </div>
         </div>
     </footer>
 
-    <script type="module" src="script/main.js"></script>
+    <script type="module" src="scripts/main.js"></script>
 </body>
-</html> 
+</html>
